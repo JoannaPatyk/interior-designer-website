@@ -27,11 +27,14 @@ body {
 }
 
 .btn {
-    padding: 10px 20px;
+    width: 30%;
+    padding: 8px 15px;
+    margin: 5px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
     letter-spacing: 0.2rem;
+    text-align: center;
     text-transform: uppercase;
     color: #222;
     border: none;

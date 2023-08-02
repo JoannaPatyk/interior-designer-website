@@ -18,12 +18,12 @@ const Wrapper = styled.div`
 
     .background {
         opacity: 0.8;
-        background: linear-gradient(to right, #deeee5, #b9cfc3);
+        background: linear-gradient(to right, #deeee5, #68957b);
     }
 
     h2 {
         font-size: 2.2rem;
-        font-weight: 200;
+        font-weight: 400;
         line-height: 3.8rem;
         letter-spacing: 0.15rem;
     }
@@ -50,8 +50,8 @@ const Wrapper = styled.div`
     }
 
     .line {
-        width: 230px;
-        height: 4px;
+        width: 260px;
+        height: 3px;
         background-color: #b9cfc3;
     }
 `;

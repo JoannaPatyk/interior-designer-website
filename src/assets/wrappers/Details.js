@@ -9,12 +9,12 @@ const Wrapper = styled.div`
         gap: 20px;
         align-items: center;
         justify-content: flex-end;
-        background-color: #b9cfc3;
+        background-color: #68957b;
         box-shadow: 1px 1px 10px #68957b;
     }
 
     .details-container p {
-        color: #222;
+        color: #fefcfd;
         font-weight: 500;
     }
 
@@ -26,7 +26,7 @@ const Wrapper = styled.div`
     }
 
     .icon {
-        color: #222;
+        color: #fefcfd;
     }
 `;
 
