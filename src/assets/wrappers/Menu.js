@@ -14,14 +14,14 @@ const Wrapper = styled.div`
     .menu-element {
         padding: 0 0.5rem;
         font-weight: 500;
-        letter-spacing: 0.2rem;
+        letter-spacing: var(--letterSpacing);
         text-align: center;
-        transition: 0.5s;
+        transition: var(--transition);
         cursor: pointer;
     }
 
     .menu-element:hover {
-        color: #68957b;
+        color: var(--primary-300);
         transform: scale(0.95);
     }
 `;
