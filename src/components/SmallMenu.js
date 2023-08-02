@@ -1,7 +1,7 @@
 import React from 'react';
 import links from '../utils/links';
 import { Link } from 'react-router-dom';
-import Wrapper from '../assets/wrappers/Menu';
+import Wrapper from '../assets/wrappers/SmallMenu';
 
 function SmallMenu() {
     return (

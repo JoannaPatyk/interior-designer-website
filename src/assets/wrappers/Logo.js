@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     }
 
     .logo {
-        width: 15%;
+        width: 13%;
     }
 `;
 

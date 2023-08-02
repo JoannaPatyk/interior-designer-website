@@ -10,15 +10,15 @@ const Wrapper = styled.div`
         padding: 2px;
         font-size: 2.8rem;
         font-weight: 900;
-        color: #222;
+        color: var(--black);
         line-height: 3.8rem;
-        letter-spacing: 0.25rem;
-        font-family: 'Cormorant Garamond', sans-serif;
+        letter-spacing: var(--letterSpacing);
+        font-family: var(--secondary-fontFamily);
     }
 
     .background {
         opacity: 0.8;
-        background: linear-gradient(to right, #deeee5, #68957b);
+        background: var(--gradient);
     }
 
     h2 {
@@ -52,7 +52,7 @@ const Wrapper = styled.div`
     .line {
         width: 260px;
         height: 3px;
-        background-color: #b9cfc3;
+        background-color: var(--primary-200);
     }
 `;
 

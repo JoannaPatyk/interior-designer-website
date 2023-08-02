@@ -9,18 +9,18 @@ const Wrapper = styled.div`
     }
 
     .btn-back {
-        background-color: #68957b;
+        background-color: var(--primary-300);
     }
 
     .btn-back:hover {
-        background-color: #176845;
+        background-color: var(--primary-500);
     }
 
     .line {
         width: 50%;
         height: 1px;
-        background-color: #222;
         margin: 0 auto;
+        background-color: var(--black);
     }
 
     .contact-wrapper {
@@ -52,7 +52,7 @@ const Wrapper = styled.div`
     }
 
     span {
-        color: #176845;
+        color: var(--primary-500);
         font-weight: 400;
     }
 
@@ -61,20 +61,20 @@ const Wrapper = styled.div`
         width: 25vw;
         margin: 0.85rem 0;
         padding: 1rem;
-        font-family: 'Montserrat', sans-serif;
+        font-family: var(--primary-fontFamily);
+        border: 1px solid var(--black);
         border-radius: 10px;
-        border: 1px solid #222;
     }
 
     input::placeholder,
     textarea::placeholder {
         font-size: 1rem;
-        font-family: 'Montserrat', sans-serif;
+        font-family: var(--primary-fontFamily);
     }
 
     input:hover,
     textarea:hover {
-        box-shadow: 0 0 5px #68957b;
+        box-shadow: var(--shadow-3);
     }
 
     input {
@@ -115,8 +115,8 @@ const Wrapper = styled.div`
         appearance: none;
         width: 0.35rem;
         height: 0.35rem;
-        color: #68957b;
-        border: 0.05rem solid #222;
+        color: var(--primary-300);
+        border: 1px solid var(--black);
         border-radius: 50px;
     }
 
@@ -127,15 +127,15 @@ const Wrapper = styled.div`
         clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
         transform: scale(0);
         transform-origin: bottom left;
-        transition: 120ms transform ease-in-out;
-        box-shadow: inset 1em 1em #222;
+        transition: var(--shadow-2);
+        box-shadow: var(--shadow-2);
     }
 
     input[type='checkbox']:checked::before {
         transform: scale(1);
     }
 
-    input[type='checkbox']:focus {
+    input[type='checkbox']:checked {
         outline: max(2px, 0.15em) solid currentColor;
         outline-offset: max(2px, 0.15em);
     }
@@ -151,13 +151,9 @@ const Wrapper = styled.div`
         transform: translateY(-50%);
         left: 1.9%;
         z-index: 100;
-        color: #fefcfd;
+        color: var(--white);
         font-size: 1.5rem;
         cursor: pointer;
-    }
-
-    .menu {
-        justify-content: flex-start;
     }
 
     .menu-box {
@@ -171,17 +167,6 @@ const Wrapper = styled.div`
 
     .menu-open {
         left: 5%;
-    }
-
-    .menu-element {
-        font-size: 1rem;
-        color: #fefcfd;
-        text-decoration: none;
-        transition: 0.5s;
-    }
-
-    .menu-element:hover {
-        color: #222;
     }
 `;
 
