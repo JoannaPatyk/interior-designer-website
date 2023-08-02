@@ -42,6 +42,7 @@
     --shadow-4: 1px 1px 10px var(--primary-300);
 
     --gradient: linear-gradient(to right, #deeee5, #68957b);
+    --gradient-2: linear-gradient(to bottom, #fefefe, #deeee5);
 }
 
 body {

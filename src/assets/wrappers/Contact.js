@@ -40,7 +40,9 @@ const Wrapper = styled.div`
     }
 
     h2 {
+        margin: 0;
         font-weight: 500;
+        font-family: var(--primary-fontFamily);
     }
 
     h3 {
@@ -53,7 +55,7 @@ const Wrapper = styled.div`
 
     span {
         color: var(--primary-500);
-        font-weight: 400;
+        font-weight: 600;
     }
 
     input,
@@ -98,7 +100,7 @@ const Wrapper = styled.div`
     }
 
     .form-control {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         width: 25vw;
         display: grid;
         grid-template-columns: 1rem auto;
@@ -106,6 +108,7 @@ const Wrapper = styled.div`
 
     .form-control p {
         margin-left: 2.2rem;
+        line-height: 1.4;
     }
 
     input[type='checkbox'] {

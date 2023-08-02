@@ -9,9 +9,9 @@ function MainPartLanding() {
             <div className="main-container">
                 <img src={room1} className="slide-1" alt="" />
                 <div className="title-container">
-                    <div className="title">
+                    <div className="main-title">
                         <h2>Zawsze dbam o</h2>
-                        <div className="background">
+                        <div className="main-background">
                             <h1>kreatywność, styl, funkcjonalność</h1>
                         </div>
                         <h2>Projektuje wnętrza łącząc sztukę z praktycznym podejściem...</h2>
