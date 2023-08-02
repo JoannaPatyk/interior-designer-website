@@ -4,7 +4,7 @@ const Wrapper = styled.div`
     .contact-container {
         position: relative;
         width: 100%;
-        height: 95vh;
+        height: 90vh;
         overflow: hidden;
     }
 
@@ -24,14 +24,14 @@ const Wrapper = styled.div`
     }
 
     .contact-wrapper {
-        height: 70vh;
+        height: 65vh;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     .contact-form {
-        height: 70vh;
+        height: 65vh;
         width: 30%;
         margin-top: 1rem;
         display: flex;
