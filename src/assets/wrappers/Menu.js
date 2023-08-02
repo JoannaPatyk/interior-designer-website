@@ -12,14 +12,17 @@ const Wrapper = styled.div`
     }
 
     .menu-element {
+        padding: 0 0.5rem;
         font-weight: 500;
         letter-spacing: 0.2rem;
+        text-align: center;
         transition: 0.5s;
         cursor: pointer;
     }
 
     .menu-element:hover {
-        color: #b9cfc3;
+        color: #68957b;
+        transform: scale(0.95);
     }
 `;
 
