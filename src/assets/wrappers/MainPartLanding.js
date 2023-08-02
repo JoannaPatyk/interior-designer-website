@@ -12,20 +12,26 @@ const Wrapper = styled.div`
         font-weight: 900;
         color: var(--black);
         line-height: 3.8rem;
+        text-align: left;
         letter-spacing: var(--letterSpacing);
         font-family: var(--secondary-fontFamily);
     }
 
-    .background {
+    .main-background {
         opacity: 0.8;
         background: var(--gradient);
     }
 
-    h2 {
-        font-size: 2.2rem;
+    .title-container h2 {
+        font-size: 1.8rem;
         font-weight: 400;
         line-height: 3.8rem;
         letter-spacing: 0.15rem;
+        font-family: var(--primary-fontFamily);
+        text-align: left;
+        text-transform: none;
+        padding: 0;
+        margin: 0;
     }
 
     .slide-1 {
