@@ -35,7 +35,7 @@ const Wrapper = styled.div`
         background: var(--gradient);
     }
 
-    h1 {
+    .advantages-title h1 {
         text-align: right;
         /* color: var(--primary-300); */
     }
@@ -62,11 +62,11 @@ const Wrapper = styled.div`
     }
 
     .advantage-icon {
-        font-size: 4%.5;
+        font-size: 3.5rem;
         margin: 1rem;
     }
 
-    h2 {
+    .advantage h2 {
         margin: 1rem;
         text-align: center;
         letter-spacing: var(--letterSpacing);
@@ -74,7 +74,7 @@ const Wrapper = styled.div`
         text-transform: uppercase;
     }
 
-    .advantage-icon p {
+    .advantage p {
         line-height: 1.8;
         text-align: justify;
         letter-spacing: calc(var(--letterSpacing) / 1.5);
