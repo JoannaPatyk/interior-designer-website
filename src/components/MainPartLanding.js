@@ -1,5 +1,5 @@
 import React from 'react';
-import room1 from '../assets/img/room-3.jpg';
+import room1 from '../assets/img/room-4.jpg';
 import Wrapper from '../assets/wrappers/MainPartLanding';
 import { Link } from 'react-router-dom';
 

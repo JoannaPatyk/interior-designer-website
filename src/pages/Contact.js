@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HiMenu } from 'react-icons/hi';
-import { IoIosArrowBack } from 'react-icons/io';
+import { HiArrowLongLeft } from 'react-icons/hi2';
 import Wrapper from '../assets/wrappers/Contact';
 import { Link } from 'react-router-dom';
 import Logo from '../components/Logo';
@@ -13,7 +13,7 @@ function Contact() {
         setIsOpen(!isOpen);
     };
 
-    const toggleIcon = isOpen ? <HiMenu onClick={handleToggle} /> : <IoIosArrowBack onClick={handleToggle} />;
+    const toggleIcon = isOpen ? <HiMenu onClick={handleToggle} /> : <HiArrowLongLeft onClick={handleToggle} />;
 
     return (
         <Wrapper>
