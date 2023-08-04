@@ -4,7 +4,7 @@ const Wrapper = styled.div`
     .contact-container {
         position: relative;
         width: 100%;
-        height: 90vh;
+        height: 89vh;
         overflow: hidden;
     }
 
@@ -150,7 +150,7 @@ const Wrapper = styled.div`
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: calc(5vh / 2);
+        top: calc(6vh / 2);
         transform: translateY(-50%);
         left: 1.9%;
         z-index: 100;
@@ -161,15 +161,15 @@ const Wrapper = styled.div`
 
     .menu-box {
         position: absolute;
-        top: calc(5vh / 2);
+        top: -100%;
         transform: translateY(-50%);
-        left: -120%;
+        left: 5%;
         z-index: 100;
         transition: 1s;
     }
 
     .menu-open {
-        left: 5%;
+        top: calc(6vh / 2);
     }
 `;
 

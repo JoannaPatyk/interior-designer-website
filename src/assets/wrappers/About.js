@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     .description {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
 
     .img-container {
@@ -94,15 +94,18 @@ const Wrapper = styled.div`
 
     .message-container {
         width: 70%;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 
     .message-title {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 40px;
     }
 
     .line {
@@ -125,7 +128,7 @@ const Wrapper = styled.div`
         font-weight: 300;
     }
 
-    .message-contact h3 {
+    .message-container h3 {
         font-weight: 300;
         margin-bottom: 0.75rem;
     }
@@ -137,7 +140,7 @@ const Wrapper = styled.div`
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: calc(5vh / 2);
+        top: calc(6vh / 2);
         transform: translateY(-50%);
         left: 1.9%;
         z-index: 100;
@@ -156,7 +159,11 @@ const Wrapper = styled.div`
     }
 
     .menu-open {
-        top: calc(5vh / 2);
+        top: calc(6vh / 2);
+    }
+
+    .btn {
+        margin-bottom: 2rem;
     }
 
     @keyframes arrow-1 {

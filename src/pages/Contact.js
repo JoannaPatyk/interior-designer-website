@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { HiMenu } from 'react-icons/hi';
 import { HiArrowLongLeft } from 'react-icons/hi2';
 import Wrapper from '../assets/wrappers/Contact';
-import { Link } from 'react-router-dom';
 import Logo from '../components/Logo';
 import SmallMenu from '../components/SmallMenu';
 
@@ -45,9 +44,6 @@ function Contact() {
                         <button className="btn" type="submit">
                             wyślij
                         </button>
-                        <Link to="/" className="btn btn-back">
-                            wróć
-                        </Link>
                     </form>
                 </div>
             </div>

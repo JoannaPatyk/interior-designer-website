@@ -7,6 +7,9 @@ function SmallMenu() {
     return (
         <Wrapper>
             <nav className="menu">
+                <Link to="/" className="menu-element" role="button">
+                    główna
+                </Link>
                 {links.map(({ id, text, path }) => {
                     return (
                         <Link className="menu-element" role="button" key={id} to={path}>
