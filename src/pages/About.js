@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/About';
 import work1 from '../assets/img/work-1.jpg';
-import work2 from '../assets/img/room-2.jpg';
+import work2 from '../assets/img/work-2.jpg';
 import { HiArrowLongDown, HiArrowLongLeft } from 'react-icons/hi2';
 import { HiMenu } from 'react-icons/hi';
 import SmallMenu from '../components/SmallMenu';
@@ -82,13 +82,12 @@ function About() {
                     <div className="message-title">
                         <div className="line"></div>
                         <h1>Masz jakieś pytania?</h1>
+                        <div className="line"></div>
                     </div>
-                    <div className="message-contact">
-                        <h3>Napisz do mnie, odpowiem najszybciej jak to możliwe!</h3>
-                        <Link to="/contact" className="btn">
-                            Kontakt
-                        </Link>
-                    </div>
+                    <h3>Napisz do mnie, odpowiem najszybciej jak to możliwe!</h3>
+                    <Link to="/contact" className="btn">
+                        Kontakt
+                    </Link>
                 </div>
             </div>
         </Wrapper>

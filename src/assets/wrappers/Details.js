@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .details-container {
-        height: 5vh;
+        height: 6vh;
         width: 100%;
         padding-right: 2rem;
         display: flex;
@@ -14,8 +14,8 @@ const Wrapper = styled.div`
     }
 
     .details-container p {
-        color: var(--white);
-        font-weight: 300;
+        color: var(--black);
+        font-weight: 400;
     }
 
     .detail-element {
@@ -26,7 +26,27 @@ const Wrapper = styled.div`
     }
 
     .icon {
-        color: var(--white);
+        color: var(--black);
+    }
+
+    .media-icon {
+        width: 30px;
+        position: absolute;
+        top: calc(6vh / 2);
+        transform: translateY(-50%);
+        transition: var(--transition);
+    }
+
+    .media-icon:hover {
+        transform: translateY(-50%) scale(0.95);
+    }
+
+    .facebook {
+        right: 480px;
+    }
+
+    .instagram {
+        right: 530px;
     }
 `;
 
