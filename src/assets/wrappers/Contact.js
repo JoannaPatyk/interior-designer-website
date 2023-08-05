@@ -18,9 +18,7 @@ const Wrapper = styled.div`
 
     .line {
         width: 50%;
-        height: 1px;
         margin: 0 auto;
-        background-color: var(--black);
     }
 
     .contact-wrapper {
