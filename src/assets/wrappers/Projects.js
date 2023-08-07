@@ -74,6 +74,13 @@ const Wrapper = styled.div`
         filter: blur(0);
     }
 
+    .title {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: var(--secondary-fontFamily);
+    }
+
     .circle {
         position: absolute;
         z-index: -10;

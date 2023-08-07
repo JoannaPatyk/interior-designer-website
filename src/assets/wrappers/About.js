@@ -80,9 +80,9 @@ const Wrapper = styled.div`
     }
 
     .element {
-        width: 85%;
-        font-size: 1.2rem;
-        line-height: 2;
+        width: 82%;
+        font-size: 1.25rem;
+        line-height: 2.2;
         font-weight: 300;
         text-align: justify;
     }

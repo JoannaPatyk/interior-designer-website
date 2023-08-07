@@ -30,6 +30,7 @@ const Wrapper = styled.div`
 
     .advantages-title h1 {
         text-align: right;
+        text-transform: uppercase;
         padding-top: 1rem;
     }
 
