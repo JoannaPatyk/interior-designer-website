@@ -1,4 +1,4 @@
-# Interior Designer Portfolio🪴
+# Interior Designer Portfolio 🪴
 
 This repository hosts the source code for a comprehensive portfolio exemplifying the work of an individual specializing in interior design. Through a collection of meticulously curated projects, this portfolio not only showcases an impressive array of skills but also provides a captivating insight into the creative journey within the realm of interior design.
 
@@ -10,8 +10,12 @@ From conceptualization to execution, each project narrates a unique story, refle
 
 -   Presentation of interior design projects,
 -   Information about me and skills,
--   Contact details data,
--   Previously realized works.
+-   Contact details,
+-   Previous works.
+
+![Project Preview](src/assets/img/screen-2.png)
+
+![Project Preview](src/assets/img/screen-3.png)
 
 ## Installation and Local Setup
 
@@ -21,10 +25,6 @@ From conceptualization to execution, each project narrates a unique story, refle
 4. Run the project locally: `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-![Project Preview](src/assets/img/screen-2.png)
-
-![Project Preview](src/assets/img/screen-3.png)
 
 ## Technologies
 
@@ -38,4 +38,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**Page isn't responsive - work is in progress.**
+The website is not yet responsive - currently under development.
