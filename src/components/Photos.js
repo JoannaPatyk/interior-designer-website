@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import room1 from '../assets/img/room-5.jpg';
 import Wrapper from '../assets/wrappers/Photos';
 import { Link } from 'react-router-dom';
 
 function Photos() {
-    const titles = ['kreatywność', 'funkcjonalność', 'szczegóły i styl'];
+    const titles = useMemo(() => ['kreatywność', 'funkcjonalność', 'szczegóły i styl'], []);
     const [title, setTitle] = useState(titles[0]);
     const [index, setIndex] = useState(0);
 

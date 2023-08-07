@@ -1,25 +1,12 @@
-import React, { useState } from 'react';
-import { HiMenu } from 'react-icons/hi';
-import { HiArrowLongLeft } from 'react-icons/hi2';
+import React from 'react';
 import Wrapper from '../assets/wrappers/Contact';
 import Logo from '../components/Logo';
 import SmallMenu from '../components/SmallMenu';
 
 function Contact() {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const handleToggle = () => {
-        setIsOpen(!isOpen);
-    };
-
-    const toggleIcon = isOpen ? <HiMenu onClick={handleToggle} /> : <HiArrowLongLeft onClick={handleToggle} />;
-
     return (
         <Wrapper>
-            <div className="menu-icon">{toggleIcon}</div>
-            <div className={`${isOpen ? 'menu-box' : 'menu-box menu-open'}`}>
-                <SmallMenu />
-            </div>
+            <SmallMenu />
             <div className="contact-container">
                 <Logo />
                 <div className="line"></div>
@@ -36,8 +23,8 @@ function Contact() {
                             <label className="form-control">
                                 <input type="checkbox" id="checkbox" name="checkbox" />
                                 <p>
-                                    WYRAŻAM ZGODĘ NA PRZETWARZANIE MOICH DANYCH OSOBOWYCH ZGODNIE Z USTAWĄ O OCHRONIE
-                                    DANYCH OSOBOWYCH W ZWIĄZKU Z REALIZACJĄ ZGŁOSZENIA. POLITYKA PRYWATNOŚCI
+                                    WYrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie
+                                    danych osobowych w związku z realizacją zgłoszenia, Polityka prywatności.
                                 </p>
                             </label>
                         </div>
