@@ -59,7 +59,7 @@ const Wrapper = styled.div`
         height: 100px;
         padding: 1rem;
         margin: 1rem;
-        background-color: var(--primary-100);
+        background: var(--gradient);
         border-radius: 50%;
     }
 

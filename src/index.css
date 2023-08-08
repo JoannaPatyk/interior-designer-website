@@ -58,14 +58,14 @@ body {
     padding: 8px 15px;
     margin: 5px;
     font-family: var(--primary-fontFamily);
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.1rem;
-    letter-spacing: var(--letterSpacing);
+    letter-spacing: calc(var(--letterSpacing) * 2);
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: var(--primary-300);
     animation: btn 2s infinite;
     transition: var(--transition);
@@ -100,7 +100,8 @@ body {
 
 .line {
     width: 10rem;
-    height: 3px;
+    height: 10px;
+    border-radius: 25px;
     margin-right: -10px;
     background: var(--gradient);
 }
