@@ -19,13 +19,13 @@ const Wrapper = styled.div`
     .title {
         padding: 0.25rem;
         line-height: 3.8rem;
-        font-weight: 700;
+        font-weight: 900;
         font-size: 3rem;
-        color: var(--black);
+        color: var(--primary-500);
         text-align: left;
         letter-spacing: var(--letterSpacing);
         font-family: var(--secondary-fontFamily);
-        background: var(--gradient);
+        /* background: var(--gradient); */
     }
 
     .title-container h2 {
@@ -50,10 +50,8 @@ const Wrapper = styled.div`
     }
 
     .line {
-        margin-top: 1rem;
-        width: 400px;
-        height: 3px;
-        background: var(--gradient);
+        width: 50%;
+        height: 5px;
     }
 `;
 

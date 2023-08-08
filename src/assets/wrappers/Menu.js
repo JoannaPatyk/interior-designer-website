@@ -16,6 +16,7 @@ const Wrapper = styled.div`
         font-weight: 500;
         letter-spacing: var(--letterSpacing);
         text-align: center;
+        border-bottom: 2px solid transparent;
         transition: var(--transition);
         cursor: pointer;
     }

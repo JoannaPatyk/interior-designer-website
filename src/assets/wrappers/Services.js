@@ -78,7 +78,7 @@ const Wrapper = styled.div`
         right: -20%;
         width: 300px;
         height: 300px;
-        background-color: var(--primary-100);
+        background: var(--primary-100);
     }
 
     .circle-3 {
@@ -118,7 +118,7 @@ const Wrapper = styled.div`
     }
 
     .service-description {
-        width: 90%;
+        width: 70%;
         line-height: 2;
         text-align: justify;
     }
@@ -129,7 +129,7 @@ const Wrapper = styled.div`
     }
 
     .services-description span {
-        font-weight: 500;
+        font-weight: 700;
         color: var(--primary-300);
     }
 `;

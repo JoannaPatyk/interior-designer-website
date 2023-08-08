@@ -33,7 +33,7 @@ function Services() {
                 <h4 className="services-description">
                     Projekt wnętrza to proces, w którym Twój głos i <span>preferencje są kluczowe</span>. Moja wiedza w
                     połączeniu z Twoją wizją pozwolą stworzyć wnętrze, które będzie odzwierciedleniem Twojej osobowości
-                    i funkcjonalnych potrzeb.{' '}
+                    i funkcjonalnych potrzeb. <br />
                     <span>
                         Czekam na współpracę z Tobą i na stworzenie wnętrza, które przewyższy Twoje oczekiwania.
                     </span>
