@@ -6,52 +6,53 @@ const Wrapper = styled.div`
         height: 65vh;
     }
 
-    .slide-1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-    }
-
-    .title {
-        padding: 0.25rem;
-        line-height: 3.8rem;
-        font-weight: 900;
-        font-size: 3rem;
-        color: var(--primary-500);
-        text-align: left;
-        letter-spacing: var(--letterSpacing);
-        font-family: var(--secondary-fontFamily);
-        /* background: var(--gradient); */
-    }
-
-    .title-container h2 {
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 2;
-        letter-spacing: 0.15rem;
-        font-family: var(--primary-fontFamily);
-        text-align: left;
-        text-transform: none;
-    }
-
     .title-container {
         width: 50%;
-        height: 100%;
-        padding-left: 8rem;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-title {
+        width: 50%;
+        height: 70vh;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        z-index: 10;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
-        gap: 30px;
         flex-direction: column;
     }
 
+    .title-container .title {
+        font-weight: 700;
+        font-size: 2.5rem;
+        color: var(--black);
+        text-align: left;
+        letter-spacing: var(--letterSpacing);
+        font-family: var(--secondary-fontFamily);
+        background: var(--gradient);
+    }
+
+    .title-container h2 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: 0.15rem;
+        font-family: var(--primary-fontFamily);
+        text-align: left;
+    }
+
+    .btn-contact {
+        margin-top: 2rem;
+    }
+
     .line {
-        width: 50%;
-        height: 5px;
+        width: 60%;
+        margin-top: 1rem;
     }
 `;
 

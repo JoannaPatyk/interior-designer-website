@@ -63,7 +63,6 @@ const Wrapper = styled.div`
         padding: 1rem;
         font-family: var(--primary-fontFamily);
         border: 1px solid var(--black);
-        border-radius: 25px;
     }
 
     input::placeholder,

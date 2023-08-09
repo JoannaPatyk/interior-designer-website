@@ -56,16 +56,14 @@ body {
 .btn {
     width: 30%;
     padding: 8px 15px;
-    margin: 5px;
     font-family: var(--primary-fontFamily);
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.1rem;
     letter-spacing: calc(var(--letterSpacing) * 2);
     text-align: center;
     text-transform: uppercase;
     color: var(--white);
     border: none;
-    border-radius: 25px;
     background-color: var(--primary-300);
     animation: btn 2s infinite;
     transition: var(--transition);
@@ -73,8 +71,7 @@ body {
 }
 
 .btn:hover {
-    color: var(--black);
-    background-color: var(--primary-200);
+    background-color: var(--primary-400);
     box-shadow: var(--shadow-1);
 }
 
@@ -100,7 +97,7 @@ body {
 
 .line {
     width: 10rem;
-    height: 10px;
+    height: 2px;
     border-radius: 25px;
     margin-right: -10px;
     background: var(--gradient);
