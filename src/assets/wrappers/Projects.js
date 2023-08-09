@@ -56,28 +56,21 @@ const Wrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 60px;
     }
 
     .project {
         position: relative;
-    }
-
-    .project img {
-        width: 80%;
-        filter: blur(1px);
+        width: 400px;
         transition: var(--transition);
         cursor: pointer;
-    }
-
-    .project img:hover {
-        transform: scale(1.05);
-        filter: blur(0);
     }
 
     .title {
         margin-top: 1rem;
         font-size: 1.5rem;
         font-weight: 500;
+        text-align: center;
         font-family: var(--secondary-fontFamily);
     }
 
@@ -85,45 +78,6 @@ const Wrapper = styled.div`
         position: absolute;
         z-index: -10;
         border-radius: 50%;
-    }
-
-    .circle-1 {
-        top: -15%;
-        left: -5%;
-        width: 150px;
-        height: 150px;
-        background-color: var(--primary-300);
-    }
-
-    .circle-2 {
-        bottom: -20%;
-        right: -20%;
-        width: 350px;
-        height: 350px;
-        background-color: var(--primary-100);
-    }
-
-    .circle-3 {
-        bottom: -10%;
-        right: 0;
-        width: 180px;
-        height: 180px;
-        background-color: var(--primary-400);
-    }
-
-    .circle-4 {
-        top: 10%;
-        left: -35%;
-        width: 120px;
-        height: 120px;
-        background-color: var(--primary-300);
-    }
-    .circle-5 {
-        top: 30%;
-        right: 5%;
-        width: 200px;
-        height: 200px;
-        background-color: var(--primary-100);
     }
 `;
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .menu {
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         display: flex;
         align-items: center;
         justify-content: center;

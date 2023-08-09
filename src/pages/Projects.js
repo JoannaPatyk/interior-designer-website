@@ -2,6 +2,7 @@ import React from 'react';
 import Wrapper from '../assets/wrappers/Projects';
 import SmallMenu from '../components/SmallMenu';
 import projects from '../utils/projects';
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 function Projects() {
     return (
@@ -14,12 +15,21 @@ function Projects() {
                     <div className="line"></div>
                 </div>
                 <div className="projects">
-                    {projects.map(({ id, img, alt, circle1, circle2, title }) => {
+                    {projects.map(({ id, img1, img2, alt, title }) => {
                         return (
                             <div key={id} className="project">
-                                <img src={img} alt={alt} />
-                                <div className={circle1}></div>
-                                <div className={circle2}></div>
+                                <ReactCompareSlider
+                                    boundsPadding={10}
+                                    itemOne={<ReactCompareSliderImage alt={alt} src={img1} />}
+                                    itemTwo={<ReactCompareSliderImage alt={alt} src={img2} />}
+                                    position={50}
+                                    style={{
+                                        height: '60vh',
+                                        width: '100%',
+                                        objectFit: 'cover',
+                                        opacity: '1'
+                                    }}
+                                />
                                 <p className="title">{title}</p>
                             </div>
                         );
