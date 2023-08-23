@@ -4,7 +4,7 @@ const Wrapper = styled.div`
     .details-container {
         height: 6vh;
         width: 100%;
-        padding-right: 2rem;
+        padding-right: 30px;
         display: flex;
         gap: 20px;
         align-items: center;
@@ -42,11 +42,38 @@ const Wrapper = styled.div`
     }
 
     .facebook {
-        right: 480px;
+        left: 80px;
     }
 
     .instagram {
-        right: 530px;
+        left: 30px;
+    }
+
+    @media (max-width: 1250px) {
+        .details-container p {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 615px) {
+        .details-container {
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .details-container p {
+            font-size: 0.75rem;
+        }
+
+        .media-icon {
+            width: 25px;
+        }
+
+        .facebook {
+            left: 65px;
+        }
     }
 `;
 

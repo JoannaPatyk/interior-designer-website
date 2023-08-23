@@ -10,6 +10,26 @@ function Photos() {
     const [title, setTitle] = useState(titles[0]);
     const [index, setIndex] = useState(0);
 
+    const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight
+            });
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((index + 1) % 3);
@@ -22,24 +42,31 @@ function Photos() {
     return (
         <Wrapper>
             <div className="main-container">
-                <ReactCompareSlider
-                    boundsPadding={20}
-                    itemOne={<ReactCompareSliderImage alt="Image one" src={room1} />}
-                    itemTwo={
-                        <ReactCompareSliderImage alt="Image two" src={room2} style={{ transform: 'scale(1.125)' }} />
-                    }
-                    position={90}
-                    style={{
-                        height: '70vh',
-                        width: '100%',
-                        position: 'absolute',
-                        top: '0',
-                        left: '0',
-                        objectFit: 'cover',
-                        opacity: '1'
-                    }}
-                />
-
+                {windowSize.width > 800 ? (
+                    <ReactCompareSlider
+                        boundsPadding={20}
+                        itemOne={<ReactCompareSliderImage alt="Image one" src={room1} />}
+                        itemTwo={
+                            <ReactCompareSliderImage
+                                alt="Image two"
+                                src={room2}
+                                style={{ transform: 'scale(1.125)' }}
+                            />
+                        }
+                        position={90}
+                        style={{
+                            height: '70vh',
+                            width: '100%',
+                            position: 'absolute',
+                            top: '0',
+                            left: '0',
+                            objectFit: 'cover',
+                            opacity: '1'
+                        }}
+                    />
+                ) : (
+                    <img src={room1} className="slide-1" alt="" />
+                )}
                 <div className="title-container">
                     <div className="main-title">
                         <h2>

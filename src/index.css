@@ -103,6 +103,35 @@ body {
     background: var(--gradient);
 }
 
+.menu-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(6vh / 2);
+    transform: translateY(-50%);
+    left: 1.9%;
+    z-index: 100;
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-box {
+    position: absolute;
+    top: -100%;
+    transform: translateY(-50%);
+    left: 5%;
+    z-index: 100;
+    transition: 1s;
+}
+
+.menu-open {
+    top: calc(6vh / 2);
+}
+
 @keyframes btn {
     0% {
         transform: scale(1);
