@@ -10,8 +10,14 @@ const Wrapper = styled.div`
     }
 
     .logo {
-        width: 15%;
+        height: 18vh;
         margin: 2rem 0;
+    }
+
+    @media (max-width: 650px) {
+        .logo {
+            height: 16vh;
+        }
     }
 `;
 

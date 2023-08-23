@@ -38,13 +38,14 @@ const Wrapper = styled.div`
     }
 
     h2 {
-        margin: 0;
+        margin: 0.5rem;
         font-weight: 500;
+        text-align: center;
         font-family: var(--primary-fontFamily);
     }
 
     h3 {
-        width: 25vw;
+        width: 45vw;
         font-weight: 400;
         letter-spacing: 0.15rem;
         padding: 0.5rem;
@@ -58,7 +59,7 @@ const Wrapper = styled.div`
 
     input,
     textarea {
-        width: 25vw;
+        width: 28vw;
         margin: 0.85rem 0;
         padding: 1rem;
         font-family: var(--primary-fontFamily);
@@ -97,15 +98,12 @@ const Wrapper = styled.div`
     }
 
     .form-control {
+        width: 28vw;
         font-size: 0.7rem;
-        width: 25vw;
-        display: grid;
-        grid-template-columns: 1rem auto;
-    }
-
-    .form-control p {
-        margin-left: 2.2rem;
-        line-height: 1.4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
     }
 
     input[type='checkbox'] {
@@ -140,33 +138,48 @@ const Wrapper = styled.div`
         outline-offset: max(2px, 0.15em);
     }
 
-    .menu-icon {
-        width: 35px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: calc(6vh / 2);
-        transform: translateY(-50%);
-        left: 1.9%;
-        z-index: 100;
-        color: var(--white);
-        font-size: 1.5rem;
-        cursor: pointer;
+    @media (max-width: 1600px) {
+        .form-control,
+        input,
+        textarea {
+            width: 35vw;
+        }
+
+        .contact-form {
+            width: 40%;
+        }
     }
 
-    .menu-box {
-        position: absolute;
-        top: -100%;
-        transform: translateY(-50%);
-        left: 5%;
-        z-index: 100;
-        transition: 1s;
+    @media (max-width: 1350px) {
+        .form-control,
+        input,
+        textarea {
+            width: 40vw;
+        }
+
+        .btn {
+            width: 40%;
+        }
     }
 
-    .menu-open {
-        top: calc(6vh / 2);
+    @media (max-width: 1050px) {
+        .form-control,
+        input,
+        textarea {
+            width: 45vw;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        .btn {
+            width: 45%;
+        }
     }
 `;
 

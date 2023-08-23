@@ -23,7 +23,7 @@ function Contact() {
                             <label className="form-control">
                                 <input type="checkbox" id="checkbox" name="checkbox" />
                                 <p>
-                                    WYrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie
+                                    Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie
                                     danych osobowych w związku z realizacją zgłoszenia, Polityka prywatności.
                                 </p>
                             </label>

@@ -25,6 +25,23 @@ const Wrapper = styled.div`
         color: var(--primary-300);
         transform: scale(0.95);
     }
+
+    @media (max-width: 600px) {
+        .menu-element {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .menu {
+            padding: 0.35rem 0;
+            gap: 5px;
+        }
+
+        .menu-element {
+            font-size: 0.75rem;
+        }
+    }
 `;
 
 export default Wrapper;
