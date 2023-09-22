@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .main-container {
         position: relative;
-        height: 65vh;
     }
 
     .title-container {
@@ -30,7 +29,7 @@ const Wrapper = styled.div`
         height: 70vh;
         position: absolute;
         top: 0;
-        left: 10%;
+        left: 8%;
         z-index: 10;
         display: flex;
         justify-content: center;
@@ -50,8 +49,9 @@ const Wrapper = styled.div`
     .title-container h2 {
         font-size: 1.6rem;
         font-weight: 400;
-        line-height: 1.8;
-        letter-spacing: 0.15rem;
+        line-height: 2;
+        letter-spacing: 0.25rem;
+        color: var(--white);
         font-family: var(--primary-fontFamily);
         text-align: left;
     }
@@ -61,7 +61,7 @@ const Wrapper = styled.div`
     }
 
     .line {
-        width: 60%;
+        width: 40%;
         margin-top: 1rem;
     }
 

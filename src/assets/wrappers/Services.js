@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .services-container {
-        height: 260vh;
         width: 80%;
-        margin: 0 auto;
+        margin: 4rem auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,7 +27,8 @@ const Wrapper = styled.div`
         width: 75%;
         text-align: center;
         font-weight: 300;
-        line-height: 2;
+        line-height: 2.2;
+        margin-top: 2rem;
     }
 
     .service {
@@ -131,6 +131,79 @@ const Wrapper = styled.div`
     .services-description span {
         font-weight: 700;
         color: var(--primary-300);
+    }
+
+    @media (max-width: 1400px) {
+        .services-container {
+            width: 90%;
+            gap: 100px;
+        }
+
+        .service {
+            gap: 20px;
+        }
+
+        .service-description {
+            width: 80%;
+        }
+
+        .service-description h3 {
+            font-size: 1.2rem;
+        }
+
+        .service-description p {
+            font-size: 0.9rem;
+        }
+
+        .service-img {
+            padding: 1.5rem;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .service {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        .title {
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 945px) {
+        .services-container {
+            gap: 40px;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            margin: 1rem 0;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .img-container {
+            height: 30vh;
+            width: 30vh;
+        }
+    }
+
+    @media (max-width: 680px) {
+        .title {
+            font-size: 1.6rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .title {
+            font-size: 1.4rem;
+        }
     }
 `;
 

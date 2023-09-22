@@ -3,8 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .information-container {
         width: 90%;
-        height: 90vh;
-        margin: 5vh auto 0;
+        margin: 10rem auto 6rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -13,7 +12,6 @@ const Wrapper = styled.div`
 
     .advantages-container {
         width: 90%;
-        height: 70vh;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -39,15 +37,15 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         gap: 120px;
+        margin: 4rem 1rem;
     }
 
     .advantage {
         width: 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
+        display: grid;
+        gap: 20px;
+        place-items: center;
+        grid-template-rows: 1fr 0.5fr 2.5fr;
         transition: var(--transition);
     }
 
@@ -60,7 +58,8 @@ const Wrapper = styled.div`
         height: 100px;
         padding: 1rem;
         margin: 1rem;
-        background: var(--gradient);
+        color: var(--white);
+        background-color: var(--primary-300);
         border-radius: 50%;
     }
 
@@ -73,9 +72,13 @@ const Wrapper = styled.div`
     }
 
     .advantage p {
-        line-height: 1.8;
+        line-height: 2;
         text-align: justify;
         letter-spacing: calc(var(--letterSpacing) / 1.5);
+    }
+
+    .projects-btn {
+        font-size: 0.9rem;
     }
 
     @media (max-width: 1850px) {
@@ -93,9 +96,8 @@ const Wrapper = styled.div`
             height: 80px;
         }
 
-        .btn {
+        .projects-btn {
             width: 45%;
-            font-size: 1rem;
         }
     }
 
@@ -116,11 +118,11 @@ const Wrapper = styled.div`
 
         .advantage {
             width: 50%;
-            height: 60vh;
         }
 
         .advantage h2 {
             margin: 0.8rem;
+            font-size: 1.4rem;
         }
 
         .advantage p {
@@ -129,14 +131,6 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 1080px) {
-        .information-container {
-            height: 130vh;
-        }
-
-        .advantages-container {
-            height: 130vh;
-        }
-
         .advantages-title {
             margin-top: 2rem;
             font-size: 0.9rem;
@@ -148,7 +142,6 @@ const Wrapper = styled.div`
 
         .advantages-elements {
             width: 100%;
-            height: 150vh;
             display: flex;
             flex-direction: column;
             gap: 0;
@@ -156,32 +149,22 @@ const Wrapper = styled.div`
 
         .advantage {
             width: 80%;
-            height: 35vh;
-            margin: 0;
+            margin: 1rem;
+            grid-template-rows: 1fr 0.5fr 1.5fr;
         }
 
         .advantage-icon {
             margin: 0;
         }
 
-        .btn {
+        .projects-btn {
             width: 70%;
             margin: 1rem 0;
         }
     }
 
     @media (max-width: 770px) {
-        .information-container {
-            height: 140vh;
-        }
-
-        .advantages-container {
-            height: 140vh;
-        }
-
         .advantage-icon {
-            width: 60px;
-            height: 60px;
             padding: 1rem;
         }
 
@@ -191,6 +174,15 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 680px) {
+        .advantages-elements {
+            margin: 0.5rem;
+        }
+
+        .advantage-icon {
+            width: 70px;
+            height: 70px;
+        }
+
         .advantages-title {
             margin-top: 2rem;
             font-size: 0.8rem;
@@ -198,6 +190,7 @@ const Wrapper = styled.div`
 
         .advantage {
             width: 90%;
+            grid-template-rows: 0.5fr 0.25fr 1.25fr;
         }
 
         .advantage h2 {
@@ -208,8 +201,9 @@ const Wrapper = styled.div`
             font-size: 0.8rem;
         }
 
-        .btn {
+        .projects-btn {
             font-size: 0.8rem;
+            line-height: 1.6;
         }
     }
 
@@ -218,18 +212,18 @@ const Wrapper = styled.div`
             width: 95%;
         }
 
-        .advantage-icon {
-            width: 50px;
-            height: 50px;
-            padding: 1rem;
-        }
-
         .advantage h2 {
             font-size: 1.1rem;
         }
 
         .advantage p {
             font-size: 0.75rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .advantages-title {
+            font-size: 0.7rem;
         }
     }
 `;

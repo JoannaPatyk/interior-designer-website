@@ -4,57 +4,51 @@ const Wrapper = styled.div`
     .contact-container {
         position: relative;
         width: 100%;
-        height: 89vh;
-        overflow: hidden;
+        margin: 2rem 0;
     }
 
-    .btn-back {
-        background-color: var(--primary-300);
-    }
-
-    .btn-back:hover {
-        background-color: var(--primary-500);
-    }
-
-    .line {
-        width: 50%;
-        margin: 0 auto;
+    .logo-container {
+        margin-top: 4rem;
     }
 
     .contact-wrapper {
-        height: 65vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        background-image: url('https://cdn.pixabay.com/photo/2016/07/08/13/37/texture-1504364_1280.jpg');
     }
 
     .contact-form {
-        height: 65vh;
-        width: 30%;
-        margin-top: 1rem;
+        width: 40%;
+        margin: 5rem 0;
+        padding: 2rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: var(--primary-100);
+        filter: drop-shadow(10px 10px var(--white));
     }
 
     h2 {
         margin: 0.5rem;
-        font-weight: 500;
+        font-weight: 800;
         text-align: center;
-        font-family: var(--primary-fontFamily);
+        color: var(--orange);
+        filter: drop-shadow(2px 2px var(--black));
     }
 
     h3 {
         width: 45vw;
-        font-weight: 400;
+        font-weight: 300;
         letter-spacing: 0.15rem;
-        padding: 0.5rem;
+        padding: 0.75rem;
         text-align: center;
     }
 
     span {
-        color: var(--primary-500);
-        font-weight: 600;
+        color: var(--orange);
+        font-weight: 900;
+        filter: drop-shadow(2px 2px var(--black));
     }
 
     input,
@@ -63,7 +57,8 @@ const Wrapper = styled.div`
         margin: 0.85rem 0;
         padding: 1rem;
         font-family: var(--primary-fontFamily);
-        border: 1px solid var(--black);
+        border: none;
+        transition: var(--transition);
     }
 
     input::placeholder,

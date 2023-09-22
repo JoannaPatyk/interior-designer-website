@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import links from '../utils/links';
 import { Link } from 'react-router-dom';
-import { HiArrowLongUp } from 'react-icons/hi2';
-import { HiMenu } from 'react-icons/hi';
+import { HiMenu, HiOutlineX } from 'react-icons/hi';
 import Wrapper from '../assets/wrappers/SmallMenu';
 
 function SmallMenu() {
@@ -12,7 +11,7 @@ function SmallMenu() {
         setIsOpen(!isOpen);
     };
 
-    const toggleIcon = isOpen ? <HiMenu onClick={handleToggle} /> : <HiArrowLongUp onClick={handleToggle} />;
+    const toggleIcon = isOpen ? <HiMenu onClick={handleToggle} /> : <HiOutlineX onClick={handleToggle} />;
 
     return (
         <Wrapper>
@@ -20,7 +19,7 @@ function SmallMenu() {
             <div className={`${isOpen ? 'menu-box' : 'menu-box menu-open'}`}>
                 <nav className="menu">
                     <Link to="/" className="menu-element" role="button">
-                        strona główna
+                        główna
                     </Link>
                     {links.map(({ id, text, path }) => {
                         return (

@@ -26,7 +26,7 @@ function Information() {
                         })}
                     </div>
                 </div>
-                <Link to="/projects" className="btn">
+                <Link to="/projects" className="btn projects-btn">
                     Sprawdź zrealizowane projekty
                 </Link>
             </div>

@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/About';
-import work1 from '../assets/img/work-1.jpg';
-import work2 from '../assets/img/work-2.jpg';
-import { HiArrowLongDown } from 'react-icons/hi2';
+import work1 from '../assets/img/as.jpg';
+import work2 from '../assets/img/az.jpg';
 import SmallMenu from '../components/SmallMenu';
 import descriptions from '../utils/descriptions';
 
@@ -16,7 +15,7 @@ function About() {
                     <div className="img-container">
                         <img src={work1} className="work1-img" alt="Women" />
                     </div>
-                    <HiArrowLongDown className="arrow" />
+
                     <div className="description">
                         {descriptions.map(({ id, element }) => {
                             if (id < 2) {
@@ -44,7 +43,6 @@ function About() {
                     <div className="img-container">
                         <img src={work2} className="work2-img" alt="Women" />
                     </div>
-                    <HiArrowLongDown className="arrow arrow-2" />
                 </div>
                 <div className="message-container">
                     <div className="message-title">

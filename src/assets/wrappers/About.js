@@ -2,19 +2,18 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .about-container {
-        height: 190vh;
-        width: 80%;
+        width: 70%;
         display: grid;
         place-items: center;
         grid-template-rows: 1fr 1fr 0.25fr;
-        gap: 50px;
-        margin: 0 auto;
+        gap: 100px;
+        margin: 10rem auto 5rem;
     }
 
     .description {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
     }
 
     .img-container {
@@ -27,69 +26,29 @@ const Wrapper = styled.div`
         overflow: hidden;
     }
 
-    .work1-img {
+    .work1-img,
+    .work2-img {
         width: 150%;
     }
 
-    .work2-img {
-        width: 170%;
-    }
-
-    .arrow {
-        position: absolute;
-        top: 125%;
-        left: 50%;
-        z-index: -100;
-        font-size: 4rem;
-        color: var(--primary-300);
-        animation: arrow-1 3s infinite;
-    }
-
-    .arrow-2 {
-        top: 100%;
-        animation: arrow-2 3s infinite;
-    }
-
-    .description-container-1 {
+    .description-container-1,
+    .description-container-2 {
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1.5fr;
         gap: 80px;
         place-items: center;
     }
 
     .description-container-2 {
-        position: relative;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 10px;
-        place-items: center;
-    }
-
-    .description-container-2 .description {
-        margin-left: 6rem;
-    }
-
-    .hello-title {
-        font-weight: 300;
-        margin: 2rem 0;
-    }
-
-    .hello-title span {
-        color: var(--primary-300);
+        grid-template-columns: 1.5fr 1fr;
     }
 
     .element {
-        width: 70%;
         font-size: 1rem;
         line-height: 2.2;
-        font-weight: 300;
+        font-weight: 400;
         text-align: justify;
-    }
-
-    .description span {
-        font-weight: 500;
-        color: var(--primary-300);
     }
 
     .message-container {
@@ -130,40 +89,9 @@ const Wrapper = styled.div`
 
     .message-container h3 {
         font-weight: 300;
-        margin-bottom: 0.75rem;
-    }
-
-    .menu-icon {
-        width: 35px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: calc(6vh / 2);
-        transform: translateY(-50%);
-        left: 1.9%;
-        z-index: 100;
-        color: var(--white);
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    .menu-box {
-        position: absolute;
-        top: -100%;
-        transform: translateY(-50%);
-        left: 5%;
-        z-index: 100;
-        transition: 1s;
-    }
-
-    .menu-open {
-        top: calc(6vh / 2);
-    }
-
-    .btn {
-        margin-bottom: 2rem;
+        margin: 0.75rem auto;
+        text-align: center;
+        line-height: 2;
     }
 
     @keyframes arrow-1 {
@@ -192,6 +120,67 @@ const Wrapper = styled.div`
             top: 100%;
             opacity: 1;
         }
+    }
+
+    @media (max-width: 1505px) {
+        .about-container {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .description-container-1,
+        .description-container-2 {
+            gap: 60px;
+        }
+
+        .work1-img,
+        .work2-img {
+            width: 130%;
+        }
+
+        .element {
+            font-size: 0.9rem;
+            line-height: 2;
+        }
+
+        .img-container {
+            height: 45vh;
+            width: 45vh;
+        }
+    }
+
+    @media (max-width: 1140px) {
+        .about-container {
+            width: 85%;
+            gap: 80px;
+        }
+
+        .description {
+            gap: 20px;
+        }
+
+        .description-container-1,
+        .description-container-2 {
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 940px) {
+        .about-container {
+            width: 80%;
+            gap: 20px;
+        }
+
+        .description-container-1,
+        .description-container-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    @media (max-width: 670px) {
     }
 `;
 
