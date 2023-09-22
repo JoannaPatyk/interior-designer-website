@@ -2,18 +2,22 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .menu {
-        padding: 0.5rem 0;
+        width: 50%;
+        padding: 1rem 0;
         display: flex;
+        gap: 30px;
         align-items: center;
         justify-content: center;
-        gap: 20px;
         text-decoration: none;
         text-transform: uppercase;
+        margin: 0 auto;
     }
 
     .menu-element {
+        width: 15%;
         padding: 0 0.5rem;
         font-weight: 500;
+        font-family: var(--primary-fontFamily);
         letter-spacing: var(--letterSpacing);
         text-align: center;
         border-bottom: 2px solid transparent;
@@ -22,7 +26,8 @@ const Wrapper = styled.div`
     }
 
     .menu-element:hover {
-        color: var(--primary-300);
+        color: var(--orange);
+        font-weight: 900;
         transform: scale(0.95);
     }
 

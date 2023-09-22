@@ -5,6 +5,8 @@ import Photos from '../components/Photos';
 import Information from '../components/Information';
 import { HiArrowLongDown } from 'react-icons/hi2';
 import Services from '../components/Services';
+import Form from '../components/Form';
+import Wrapper from '../assets/wrappers/Landing';
 
 function Landing() {
     const [showButton, setShowButton] = useState(false);
@@ -28,18 +30,24 @@ function Landing() {
     }, []);
 
     return (
-        <div className="main-container">
-            <Logo />
-            <Menu />
-            <Photos />
-            <Information />
-            <Services />
-            {showButton && (
-                <button id="btn-up" onClick={handleButtonUp}>
-                    <HiArrowLongDown />
-                </button>
-            )}
-        </div>
+        <Wrapper>
+            <div className="main-container">
+                <Logo />
+                <Menu />
+                <Photos />
+                <Information />
+                <Services />
+                {showButton && (
+                    <button id="btn-up" onClick={handleButtonUp}>
+                        <HiArrowLongDown />
+                    </button>
+                )}
+                <div className="form-container">
+                    <h4>Skontaktuj się ze mną a razem zaczniemy tworzyć Twój wymarzony dom...</h4>
+                    <Form />
+                </div>
+            </div>
+        </Wrapper>
     );
 }
 

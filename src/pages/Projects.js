@@ -15,7 +15,7 @@ function Projects() {
                     <div className="line"></div>
                 </div>
                 <div className="projects">
-                    {projects.map(({ id, img1, img2, alt, title }) => {
+                    {projects.map(({ id, img1, img2, alt, title, description }) => {
                         return (
                             <div key={id} className="project">
                                 <ReactCompareSlider
@@ -24,13 +24,14 @@ function Projects() {
                                     itemTwo={<ReactCompareSliderImage alt={alt} src={img2} />}
                                     position={50}
                                     style={{
-                                        height: '60vh',
+                                        height: '50vh',
                                         width: '100%',
                                         objectFit: 'cover',
                                         opacity: '1'
                                     }}
                                 />
                                 <p className="title">{title}</p>
+                                {description}
                             </div>
                         );
                     })}

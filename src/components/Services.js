@@ -35,7 +35,8 @@ function Services() {
                     połączeniu z Twoją wizją pozwolą stworzyć wnętrze, które będzie odzwierciedleniem Twojej osobowości
                     i funkcjonalnych potrzeb. <br />
                     <span>
-                        Czekam na współpracę z Tobą i na stworzenie wnętrza, które przewyższy Twoje oczekiwania.
+                        Czekam na współpracę z Tobą i na stworzenie projektu wnętrza, który przewyższy Twoje
+                        oczekiwania.
                     </span>
                 </h4>
             </div>
