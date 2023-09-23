@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .footer-container {
         position: relative;
-        height: 40vh;
+        min-height: 40vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -45,7 +45,6 @@ const Wrapper = styled.div`
         .footer-text-element {
             width: 100%;
             display: flex;
-            gap: var.$gap;
             flex-direction: column;
 
             h2 {
@@ -75,11 +74,17 @@ const Wrapper = styled.div`
                 text-align: center;
             }
 
+            .media-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
             .media-icon {
                 width: 100%;
                 font-size: 3rem;
                 color: var(--orange);
-                margin: 0.25rem 0;
+                margin: 0.5rem 0;
                 transition: var(--transition);
                 cursor: pointer;
             }
@@ -90,9 +95,56 @@ const Wrapper = styled.div`
         }
     }
 
-    @media (max-width: 650px) {
-        p {
-            font-size: 0.7rem;
+    @media (max-width: 1380px) {
+        .footer-text {
+            width: 70%;
+            gap: 20px;
+        }
+    }
+
+    @media (max-width: 1150px) {
+        .footer-text {
+            width: 80%;
+
+            .footer-text-element {
+                h2 {
+                    font-size: 1rem;
+                }
+
+                h3 {
+                    font-size: 0.7rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 910px) {
+        .footer-text {
+            .footer-text-element {
+                h3 {
+                    font-size: 0.6rem;
+                }
+
+                p {
+                    font-size: 0.7rem;
+                }
+
+                .media-icon {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 770px) {
+        .footer-text {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 0 2rem;
         }
     }
 `;

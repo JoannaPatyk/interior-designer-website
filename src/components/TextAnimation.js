@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const TextAnimation = ({ text }) => {
     const [animatedText, setAnimatedText] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
+    const animationDelay = 500;
 
     useEffect(() => {
         const animationInterval = setInterval(() => {
@@ -14,10 +15,15 @@ const TextAnimation = ({ text }) => {
                 setAnimatedText('');
                 setCurrentIndex(0);
             }
-        }, 150);
+        }, 180);
+
+        const delayTimeout = setTimeout(() => {
+            clearInterval(animationInterval);
+        }, animationDelay);
 
         return () => {
             clearInterval(animationInterval);
+            clearTimeout(delayTimeout);
         };
     }, [currentIndex, text]);
 

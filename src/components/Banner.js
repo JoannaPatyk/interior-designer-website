@@ -6,9 +6,7 @@ function Banner() {
     return (
         <Wrapper>
             <div className="banner-container">
-                <TextAnimation
-                    text={`Witaj na stronie, gdzie design staje się rzeczywistością. Jesteśmy pasjonatami sztuki tworzenia pięknych, funkcjonalnych i inspirujących przestrzeni...`}
-                />
+                <TextAnimation text={`Witaj na stronie, gdzie design staje się rzeczywistością...`} />
             </div>
         </Wrapper>
     );

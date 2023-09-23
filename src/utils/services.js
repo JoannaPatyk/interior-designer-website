@@ -1,7 +1,7 @@
-import service1 from '../assets/img/s.jpg';
-import service2 from '../assets/img/qw.jpg';
-import service3 from '../assets/img/az.jpg';
-import service4 from '../assets/img/as.jpg';
+import service1 from '../assets/img/tunnel.jpg';
+import service2 from '../assets/img/plan.jpg';
+import service3 from '../assets/img/blackstairs.jpg';
+import service4 from '../assets/img/windows.jpg';
 
 const services = [
     {

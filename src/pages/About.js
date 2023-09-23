@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/About';
-import work1 from '../assets/img/as.jpg';
-import work2 from '../assets/img/az.jpg';
+import work1 from '../assets/img/windows.jpg';
+import work2 from '../assets/img/blackstairs.jpg';
 import SmallMenu from '../components/SmallMenu';
 import descriptions from '../utils/descriptions';
 

@@ -10,9 +10,9 @@ function Form() {
                     <h3>
                         z chęcią odpowiem na <span>Twoje</span> pytania
                     </h3>
-                    <input type="text" placeholder="Imię" />
-                    <input type="email" placeholder="E-mail" />
-                    <textarea placeholder="Wiadomość..."></textarea>
+                    <input className="name" type="text" placeholder="Imię" />
+                    <input className="email" type="email" placeholder="E-mail" />
+                    <textarea className="message" placeholder="Wiadomość..."></textarea>
                     <div className="agreement">
                         <label className="form-control">
                             <input type="checkbox" id="checkbox" name="checkbox" />

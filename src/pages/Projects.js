@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Wrapper from '../assets/wrappers/Projects';
 import SmallMenu from '../components/SmallMenu';
 import projects from '../utils/projects';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 function Projects() {
+    const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+                height: window.innerHeight
+            });
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <Wrapper>
             <SmallMenu />
@@ -18,18 +38,23 @@ function Projects() {
                     {projects.map(({ id, img1, img2, alt, title, description }) => {
                         return (
                             <div key={id} className="project">
-                                <ReactCompareSlider
-                                    boundsPadding={10}
-                                    itemOne={<ReactCompareSliderImage alt={alt} src={img1} />}
-                                    itemTwo={<ReactCompareSliderImage alt={alt} src={img2} />}
-                                    position={50}
-                                    style={{
-                                        height: '50vh',
-                                        width: '100%',
-                                        objectFit: 'cover',
-                                        opacity: '1'
-                                    }}
-                                />
+                                {windowSize.width > 800 ? (
+                                    <ReactCompareSlider
+                                        boundsPadding={10}
+                                        itemOne={<ReactCompareSliderImage alt={alt} src={img1} />}
+                                        itemTwo={<ReactCompareSliderImage alt={alt} src={img2} />}
+                                        position={50}
+                                        style={{
+                                            height: '100vh',
+                                            width: '100%',
+                                            objectFit: 'cover',
+                                            opacity: '1'
+                                        }}
+                                    />
+                                ) : (
+                                    <img src={img1} className="slide-1" alt={alt} />
+                                )}
+
                                 <p className="title">{title}</p>
                                 {description}
                             </div>

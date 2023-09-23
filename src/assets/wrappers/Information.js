@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     }
 
     .advantages-title h1 {
-        text-align: right;
+        text-align: center;
         text-transform: uppercase;
         padding-top: 1rem;
     }
@@ -164,6 +164,10 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 770px) {
+        .information-container {
+            margin: 8rem auto 5rem;
+        }
+
         .advantage-icon {
             padding: 1rem;
         }
@@ -207,7 +211,17 @@ const Wrapper = styled.div`
         }
     }
 
+    @media (max-width: 600px) {
+        .line {
+            display: none;
+        }
+    }
+
     @media (max-width: 480px) {
+        .information-container {
+            margin: 4rem auto;
+        }
+
         .advantage {
             width: 95%;
         }

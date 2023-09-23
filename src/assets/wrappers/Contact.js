@@ -4,7 +4,7 @@ const Wrapper = styled.div`
     .contact-container {
         position: relative;
         width: 100%;
-        margin: 2rem 0;
+        background-image: url('https://cdn.pixabay.com/photo/2016/07/08/13/37/texture-1504364_1280.jpg');
     }
 
     .logo-container {
@@ -15,12 +15,11 @@ const Wrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url('https://cdn.pixabay.com/photo/2016/07/08/13/37/texture-1504364_1280.jpg');
     }
 
     .contact-form {
-        width: 40%;
-        margin: 5rem 0;
+        width: 60%;
+        margin: 3rem 0;
         padding: 2rem 0;
         display: flex;
         flex-direction: column;
@@ -39,7 +38,7 @@ const Wrapper = styled.div`
 
     h3 {
         width: 45vw;
-        font-weight: 300;
+        font-weight: 500;
         letter-spacing: 0.15rem;
         padding: 0.75rem;
         text-align: center;
@@ -108,8 +107,8 @@ const Wrapper = styled.div`
         appearance: none;
         width: 0.35rem;
         height: 0.35rem;
-        color: var(--primary-300);
-        border: 1px solid var(--black);
+        color: var(--orange);
+        border: 1px solid var(--orange);
         border-radius: 50px;
     }
 
@@ -117,6 +116,7 @@ const Wrapper = styled.div`
         content: '';
         width: 0.8rem;
         height: 0.8rem;
+        color: var(--orange);
         clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
         transform: scale(0);
         transform-origin: bottom left;
@@ -141,27 +141,37 @@ const Wrapper = styled.div`
         }
 
         .contact-form {
-            width: 40%;
+            width: 90%;
         }
     }
 
-    @media (max-width: 1350px) {
+    @media (max-width: 1450px) {
+        .contact-form {
+            width: 70%;
+        }
+
         .form-control,
         input,
         textarea {
             width: 40vw;
         }
+    }
 
+    @media (max-width: 1350px) {
         .btn {
             width: 40%;
         }
     }
 
     @media (max-width: 1050px) {
+        .contact-form {
+            width: 65%;
+        }
+
         .form-control,
         input,
         textarea {
-            width: 45vw;
+            width: 50vw;
         }
 
         h2 {
@@ -174,6 +184,25 @@ const Wrapper = styled.div`
 
         .btn {
             width: 45%;
+            margin-top: 1rem;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .contact-form {
+            width: 75%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .contact-form {
+            width: 85%;
+        }
+
+        .form-control,
+        input,
+        textarea {
+            width: 60vw;
         }
     }
 `;

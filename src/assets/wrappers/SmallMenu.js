@@ -15,7 +15,7 @@ const Wrapper = styled.div`
         width: 20%;
         padding: 1rem;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 900;
         color: var(--black);
         text-decoration: none;
         letter-spacing: var(--letterSpacing);
@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     .menu-element:hover {
         color: var(--orange);
         font-weight: 900;
-        transform: scale(0.95);
+        transform: scale(0.9);
     }
 
     @media (max-width: 1380px) {

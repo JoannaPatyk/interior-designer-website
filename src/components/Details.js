@@ -1,6 +1,6 @@
 import React from 'react';
 import Wrapper from '../assets/wrappers/Details';
-import { PiInstagramLogoThin, PiFacebookLogoThin, PiPhoneThin, PiChatCircleThin } from 'react-icons/pi';
+import { PiInstagramLogo, PiFacebookLogo, PiPhone, PiChatCircle } from 'react-icons/pi';
 
 function Details() {
     return (
@@ -8,20 +8,20 @@ function Details() {
             <div className="details-container">
                 <div className="media-container">
                     <a href="https://www.instagram.com/">
-                        <PiFacebookLogoThin className="facebook media-icon" />
+                        <PiFacebookLogo className="facebook media-icon" />
                     </a>
                     <a href="https://www.facebook.com/">
-                        <PiInstagramLogoThin className="instagram media-icon" />
+                        <PiInstagramLogo className="instagram media-icon" />
                     </a>
                 </div>
                 <div className="data-container">
                     <div className="detail-element">
-                        <PiPhoneThin className="icon" />
+                        <PiPhone className="icon" />
                         <p>(+48) 888 888 888</p>
                     </div>
                     <div className="detail-element">
-                        <PiChatCircleThin className="icon" />
-                        <p>e-mail: email@gmail.com</p>
+                        <PiChatCircle className="icon" />
+                        <p>mail: biuro@katarzynakowalska.pl</p>
                     </div>
                 </div>
             </div>

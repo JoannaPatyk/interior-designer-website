@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import room1 from '../assets/img/stairs.jpg';
-import room2 from '../assets/img/asw.jpg';
+import room2 from '../assets/img/building.jpg';
 import Wrapper from '../assets/wrappers/Photos';
 import { Link } from 'react-router-dom';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
@@ -75,7 +75,6 @@ function Photos() {
                         <h2>
                             łącząc sztukę z praktycznym <br /> podejściem...
                         </h2>
-                        <div className="line"></div>
                         <Link to="/contact" className="btn btn-contact">
                             Kontakt
                         </Link>

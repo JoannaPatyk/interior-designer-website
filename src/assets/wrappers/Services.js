@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
     .title {
         text-transform: uppercase;
-        text-align: right;
+        text-align: center;
         margin: 2rem 0;
     }
 
@@ -86,7 +86,7 @@ const Wrapper = styled.div`
         left: -20%;
         width: 280px;
         height: 280px;
-        background-color: var(--primary-400);
+        background-color: var(--orange);
     }
 
     .circle-4 {
@@ -102,7 +102,7 @@ const Wrapper = styled.div`
         left: -5%;
         width: 90px;
         height: 90px;
-        background-color: var(--primary-400);
+        background-color: var(--orange);
     }
 
     .circle-6 {
@@ -156,6 +156,7 @@ const Wrapper = styled.div`
         }
 
         .service-img {
+            width: 180%;
             padding: 1.5rem;
         }
     }
@@ -191,6 +192,12 @@ const Wrapper = styled.div`
         .img-container {
             height: 30vh;
             width: 30vh;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .line {
+            display: none;
         }
     }
 

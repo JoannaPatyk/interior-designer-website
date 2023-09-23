@@ -76,7 +76,7 @@ const Wrapper = styled.div`
     }
 
     .message-title h1 {
-        text-align: right;
+        text-align: center;
     }
 
     .message-contact {
@@ -136,17 +136,12 @@ const Wrapper = styled.div`
 
         .work1-img,
         .work2-img {
-            width: 130%;
+            width: 160%;
         }
 
         .element {
             font-size: 0.9rem;
             line-height: 2;
-        }
-
-        .img-container {
-            height: 45vh;
-            width: 45vh;
         }
     }
 
@@ -169,18 +164,83 @@ const Wrapper = styled.div`
     @media (max-width: 940px) {
         .about-container {
             width: 80%;
-            gap: 20px;
+            gap: 40px;
+            margin-bottom: 2rem;
+        }
+
+        .message-container {
+            width: 90%;
+
+            .btn {
+                width: 40%;
+            }
         }
 
         .description-container-1,
         .description-container-2 {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 40px;
         }
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: 680px) {
+        .about-container {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            margin: 8rem auto 3rem;
+        }
+
+        .img-container {
+            height: 40vh;
+            width: 40vh;
+        }
+
+        .work1-img,
+        .work2-img {
+            width: 180%;
+        }
+
+        .message-container {
+            .btn {
+                width: 50%;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .line {
+            display: none;
+        }
+    }
+
+    @media (max-width: 515px) {
+        .img-container {
+            height: 30vh;
+            width: 30vh;
+        }
+
+        .message-container {
+            .btn {
+                width: 60%;
+            }
+        }
+    }
+
+    @media (max-width: 430px) {
+        .message-container {
+            .btn {
+                width: 70%;
+            }
+        }
+    }
+
+    @media (max-width: 375px) {
+        .img-container {
+            height: 25vh;
+            width: 25vh;
+        }
     }
 `;
 

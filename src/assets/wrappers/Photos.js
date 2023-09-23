@@ -3,11 +3,12 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .main-container {
         position: relative;
+        box-shadow: 2px 2px 10px 5px var(--black);
     }
 
     .title-container {
-        width: 50%;
-        height: 70vh;
+        width: 70%;
+        min-height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -28,8 +29,8 @@ const Wrapper = styled.div`
         width: 50%;
         height: 70vh;
         position: absolute;
-        top: 0;
-        left: 8%;
+        top: -2%;
+        left: 5%;
         z-index: 10;
         display: flex;
         justify-content: center;
@@ -37,8 +38,9 @@ const Wrapper = styled.div`
     }
 
     .title-container .title {
-        font-weight: 700;
-        font-size: 2.5rem;
+        padding: 0 0.5rem;
+        font-weight: 900;
+        font-size: 2.8rem;
         color: var(--black);
         text-align: left;
         letter-spacing: var(--letterSpacing);
@@ -47,10 +49,10 @@ const Wrapper = styled.div`
     }
 
     .title-container h2 {
-        font-size: 1.6rem;
-        font-weight: 400;
+        font-size: 2.2rem;
+        font-weight: 600;
         line-height: 2;
-        letter-spacing: 0.25rem;
+        letter-spacing: 2px;
         color: var(--white);
         font-family: var(--primary-fontFamily);
         text-align: left;
@@ -60,16 +62,22 @@ const Wrapper = styled.div`
         margin-top: 2rem;
     }
 
-    .line {
-        width: 40%;
-        margin-top: 1rem;
+    @media (max-width: 1300px) {
+        .title-container h2 {
+            font-size: 2rem;
+        }
     }
 
-    @media (max-width: 1060px) {
+    @media (max-width: 1210px) {
         .title-container h2 {
-            font-size: 1.3rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 1170px) {
+        .title-container h2 {
             line-height: 1.6;
-            letter-spacing: 0.1rem;
+            letter-spacing: 1px;
         }
 
         .title-container .title {
@@ -78,39 +86,64 @@ const Wrapper = styled.div`
         }
     }
 
-    @media (max-width: 890px) {
+    @media (max-width: 980px) {
         .main-title {
-            width: 80%;
+            width: 90%;
         }
     }
 
-    @media (max-width: 620px) {
-        .title-container h2 {
-            font-size: 1.2rem;
+    @media (max-width: 800px) {
+        .main-title {
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            align-items: center;
         }
 
         .title-container .title {
+            text-align: center;
+            font-size: 2.4rem;
+        }
+
+        .title-container h2 {
+            text-align: center;
+            font-size: 2.2rem;
+        }
+    }
+
+    @media (max-width: 690px) {
+        .title-container h2 {
             font-size: 2rem;
         }
 
+        .title-container .title {
+            font-size: 2.2rem;
+        }
+
         .btn {
-            width: 40%;
+            width: 45%;
         }
     }
 
-    @media (max-width: 515px) {
+    @media (max-width: 625px) {
+        .title-container {
+            min-height: 50vh;
+        }
+
+        .slide-1 {
+            height: 50vh;
+        }
+
+        .main-title {
+            height: 50vh;
+        }
+
         .title-container h2 {
-            font-size: 1rem;
-            text-align: center;
+            font-size: 1.6rem;
         }
 
         .title-container .title {
-            font-size: 1.5rem;
-        }
-
-        .line {
-            width: 0;
-            margin: 0;
+            font-size: 1.8rem;
         }
 
         .btn {
@@ -118,9 +151,60 @@ const Wrapper = styled.div`
         }
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 515px) {
+        .title-container h2 {
+            font-size: 1.4rem;
+        }
+
+        .title-container .title {
+            font-size: 1.6rem;
+        }
+
         .btn {
             width: 50%;
+        }
+    }
+
+    @media (max-width: 475px) {
+        .title-container {
+            min-height: 40vh;
+        }
+
+        .slide-1 {
+            height: 40vh;
+        }
+
+        .main-title {
+            height: 40vh;
+        }
+
+        .title-container h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+
+    @media (max-width: 435px) {
+        .title-container h2 {
+            font-size: 1rem;
+        }
+
+        .title-container .title {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width: 395px) {
+        .main-title {
+            width: 95%;
+        }
+
+        .title-container h2 {
+            font-size: 0.95rem;
+        }
+
+        .title-container .title {
+            font-size: 1.2rem;
         }
     }
 `;
