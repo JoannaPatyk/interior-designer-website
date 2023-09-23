@@ -19,7 +19,7 @@ function SmallMenu() {
             <div className={`${isOpen ? 'menu-box' : 'menu-box menu-open'}`}>
                 <nav className="menu">
                     <Link to="/" className="menu-element" role="button">
-                        główna
+                        start
                     </Link>
                     {links.map(({ id, text, path }) => {
                         return (

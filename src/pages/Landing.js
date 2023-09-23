@@ -6,6 +6,7 @@ import Information from '../components/Information';
 import { HiArrowLongDown } from 'react-icons/hi2';
 import Services from '../components/Services';
 import Form from '../components/Form';
+import Banner from '../components/Banner';
 import Wrapper from '../assets/wrappers/Landing';
 
 function Landing() {
@@ -35,6 +36,7 @@ function Landing() {
                 <Logo />
                 <Menu />
                 <Photos />
+                <Banner />
                 <Information />
                 <Services />
                 {showButton && (
@@ -43,7 +45,7 @@ function Landing() {
                     </button>
                 )}
                 <div className="form-container">
-                    <h4>Skontaktuj się ze mną a razem zaczniemy tworzyć Twój wymarzony dom...</h4>
+                    <h4>Skontaktuj się ze mną, razem stworzymy Twój wymarzony dom</h4>
                     <Form />
                 </div>
             </div>

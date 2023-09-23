@@ -7,23 +7,24 @@ const Wrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 1rem 0 0;
     }
 
     .logo {
-        height: 40vh;
+        height: 35vh;
         margin: 2rem 0 1rem;
         z-index: -1;
     }
 
     @media (max-width: 650px) {
         .logo {
-            height: 16vh;
+            height: 30vh;
         }
     }
 
     @media (max-width: 380px) {
         .logo {
-            height: 13vh;
+            height: 25vh;
         }
     }
 `;

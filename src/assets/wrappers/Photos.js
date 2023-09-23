@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .main-container {
         position: relative;
+        box-shadow: 2px 2px 10px 5px var(--black);
     }
 
     .title-container {
