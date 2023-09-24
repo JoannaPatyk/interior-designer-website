@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .main-container {
         position: relative;
-        box-shadow: 2px 2px 10px 5px var(--black);
+        box-shadow: 2px 2px 5px 5px var(--black);
     }
 
     .title-container {
@@ -30,11 +30,12 @@ const Wrapper = styled.div`
         height: 70vh;
         position: absolute;
         top: -2%;
-        left: 5%;
+        left: 10%;
         z-index: 10;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        filter: drop-shadow(3px 3px var(--black));
     }
 
     .title-container .title {
@@ -50,7 +51,7 @@ const Wrapper = styled.div`
 
     .title-container h2 {
         font-size: 2.2rem;
-        font-weight: 600;
+        font-weight: 800;
         line-height: 2;
         letter-spacing: 2px;
         color: var(--white);
@@ -98,6 +99,7 @@ const Wrapper = styled.div`
             left: 50%;
             transform: translate(-50%, -50%);
             align-items: center;
+            filter: drop-shadow(2px 2px var(--black));
         }
 
         .title-container .title {

@@ -21,6 +21,8 @@ const Wrapper = styled.div`
         text-transform: uppercase;
         text-align: center;
         margin: 2rem 0;
+        font-weight: 900;
+        filter: drop-shadow(2px 2px var(--primary-200));
     }
 
     .services-description {
@@ -37,7 +39,7 @@ const Wrapper = styled.div`
         grid-template-columns: 1fr 1fr;
         place-items: center;
         gap: 50px;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
     }
 
     .service-2,
@@ -118,19 +120,23 @@ const Wrapper = styled.div`
     }
 
     .service-description {
-        width: 70%;
+        width: 90%;
         line-height: 2;
         text-align: justify;
     }
 
     .service-description h3 {
+        width: 80%;
+        margin: 1rem auto;
+        text-align: center;
         font-size: 1.5rem;
+        line-height: 1.5;
         font-family: var(--secondary-fontFamily);
     }
 
     .services-description span {
         font-weight: 700;
-        color: var(--primary-300);
+        color: var(--orange);
     }
 
     @media (max-width: 1400px) {

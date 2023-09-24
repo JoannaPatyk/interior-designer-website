@@ -37,7 +37,6 @@ function Landing() {
                 <Logo />
                 <Menu />
                 <Photos />
-
                 <Information />
                 <Services />
                 {showButton && (

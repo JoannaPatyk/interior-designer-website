@@ -17,11 +17,11 @@ function Details() {
                 <div className="data-container">
                     <div className="detail-element">
                         <PiPhone className="icon" />
-                        <p>(+48) 888 888 888</p>
+                        <p>(+48) 000 000 000</p>
                     </div>
                     <div className="detail-element">
                         <PiChatCircle className="icon" />
-                        <p>mail: biuro@katarzynakowalska.pl</p>
+                        <p>biuro@katarzynakowalska.pl</p>
                     </div>
                 </div>
             </div>

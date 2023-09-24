@@ -4,7 +4,7 @@ const Wrapper = styled.div`
     .contact-container {
         position: relative;
         width: 100%;
-        background-image: url('https://cdn.pixabay.com/photo/2016/07/08/13/37/texture-1504364_1280.jpg');
+        background-image: url('https://github.com/JoannaPatyk/interior-designer-website/blob/main/src/assets/img/background.jpg?raw=true');
     }
 
     .logo-container {

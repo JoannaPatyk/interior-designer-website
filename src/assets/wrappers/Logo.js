@@ -10,9 +10,15 @@ const Wrapper = styled.div`
     }
 
     .logo {
-        height: 35vh;
+        height: 40vh;
         margin: 2rem 0 1rem;
         z-index: -1;
+    }
+
+    @media (max-width: 1100px) {
+        .logo {
+            height: 35vh;
+        }
     }
 
     @media (max-width: 650px) {
