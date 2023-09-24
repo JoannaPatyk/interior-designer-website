@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .banner-container {
-        min-height: 12vh;
+        min-height: 13vh;
         padding: 1rem 6rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url('https://cdn.pixabay.com/photo/2016/07/08/13/37/texture-1504364_1280.jpg');
+        background-image: url('https://github.com/JoannaPatyk/interior-designer-website/blob/main/src/assets/img/background.jpg?raw=true');
         box-shadow: 2px 2px 10px 5px var(--black);
 
         p {

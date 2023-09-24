@@ -54,14 +54,14 @@ body {
     width: 30%;
     padding: 8px 15px;
     font-family: var(--primary-fontFamily);
-    font-weight: 500;
+    font-weight: 900;
     font-size: 1.1rem;
     letter-spacing: calc(var(--letterSpacing) * 2);
     text-align: center;
     text-transform: uppercase;
     color: var(--black);
     border: none;
-    background-color: var(--primary-200);
+    background-color: var(--primary-100);
     animation: btn 2s infinite;
     transition: var(--transition);
     cursor: pointer;
@@ -70,7 +70,7 @@ body {
 .btn:hover {
     color: var(--primary-100);
     background-color: var(--primary-400);
-    filter: drop-shadow(4px 4px var(--orange));
+    filter: drop-shadow(4px 6px var(--orange));
 }
 
 #btn-up {
@@ -80,9 +80,9 @@ body {
     z-index: 100;
     width: 50px;
     height: 50px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     border: none;
-    color: var(--orange);
+    color: var(--primary-300);
     transform: rotate(180deg);
     background-color: transparent;
     animation: btnUp 3s infinite;
@@ -91,7 +91,7 @@ body {
 }
 
 #btn-up:hover {
-    color: var(--primary-300);
+    color: var(--orange);
 }
 
 .line {

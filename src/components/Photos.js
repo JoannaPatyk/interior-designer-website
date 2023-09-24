@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import room1 from '../assets/img/stairs.jpg';
-import room2 from '../assets/img/building.jpg';
+import room2 from '../assets/img/build.jpg';
 import Wrapper from '../assets/wrappers/Photos';
 import { Link } from 'react-router-dom';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
@@ -53,7 +53,7 @@ function Photos() {
                                 style={{ transform: 'scale(1.125)' }}
                             />
                         }
-                        position={90}
+                        position={80}
                         style={{
                             height: '70vh',
                             width: '100%',
@@ -73,7 +73,7 @@ function Photos() {
                             Zawsze dbam o <span className="title">{title}</span>
                         </h2>
                         <h2>
-                            łącząc sztukę z praktycznym <br /> podejściem...
+                            łącząc sztukę z praktycznym <br /> podejściem . . .
                         </h2>
                         <Link to="/contact" className="btn btn-contact">
                             Kontakt

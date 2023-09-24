@@ -77,6 +77,9 @@ const Wrapper = styled.div`
 
     .message-title h1 {
         text-align: center;
+        font-weight: 900;
+        text-transform: uppercase;
+        filter: drop-shadow(2px 2px var(--primary-200));
     }
 
     .message-contact {

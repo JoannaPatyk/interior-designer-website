@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .menu {
-        padding: 2rem 0;
+        padding: 2rem 0 3rem;
         display: flex;
         gap: 30px;
         align-items: center;
@@ -25,6 +25,7 @@ const Wrapper = styled.div`
     }
 
     .menu-element:hover {
+        filter: drop-shadow(1.5px 1.5px var(--black));
         color: var(--orange);
         transform: scale(0.9);
     }

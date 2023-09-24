@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .details-container {
-        min-height: 5vh;
+        min-height: 6vh;
         width: 100%;
         display: grid;
-        gap: 10px;
+        gap: 5px;
         place-content: center;
         grid-template-columns: 0.05fr 0.95fr;
-        padding: 0 2rem;
+        padding: 0 1.5rem;
         background-color: var(--primary-500);
         box-shadow: 2px 2px 10px 5px var(--black);
     }
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 
     .data-container {
         display: flex;
-        gap: 20px;
+        gap: 15px;
         justify-content: flex-end;
         filter: drop-shadow(2px 2px var(--primary-500));
         margin: 0.5rem 0;
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 
         .icon {
             color: var(--orange);
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
     }
 
@@ -55,7 +55,7 @@ const Wrapper = styled.div`
     }
 
     .media-icon {
-        font-size: 2rem;
+        font-size: 2.2rem;
         color: var(--orange);
         transition: var(--transition);
         cursor: pointer;

@@ -30,6 +30,8 @@ const Wrapper = styled.div`
         text-align: center;
         text-transform: uppercase;
         padding-top: 1rem;
+        font-weight: 900;
+        filter: drop-shadow(2px 2px var(--primary-200));
     }
 
     .advantages-elements {
@@ -59,13 +61,15 @@ const Wrapper = styled.div`
         padding: 1rem;
         margin: 1rem;
         color: var(--white);
-        background-color: var(--primary-300);
+        background-color: var(--orange);
         border-radius: 50%;
     }
 
     .advantage h2 {
+        padding: 0.5rem;
         margin: 1rem;
         text-align: center;
+        font-weight: 900;
         letter-spacing: var(--letterSpacing);
         font-family: var(--secondary-fontFamily);
         text-transform: uppercase;
