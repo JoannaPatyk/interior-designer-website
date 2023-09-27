@@ -3,53 +3,24 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .main-container {
         .form-container {
-            display: grid;
-            place-items: center;
-            grid-template-columns: 2fr 1fr;
-            background-image: url('https://github.com/JoannaPatyk/interior-designer-website/blob/main/src/assets/img/background.jpg?raw=true');
-            box-shadow: 2px 2px 10px 5px var(--black);
-
-            h4 {
-                width: 70%;
-                font-size: 3.5rem;
-                font-weight: 900;
-                text-align: center;
-                line-height: 1.8;
-                color: var(--orange);
-                letter-spacing: 1px;
-                filter: drop-shadow(4px 4px var(--black));
-                text-transform: uppercase;
-            }
-        }
-
-        .contact-wrapper {
-            justify-content: left;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
 
         .contact-form {
             width: 80%;
-            align-items: left;
-            background-color: var(--primary-100);
-            padding: 2rem 0;
         }
     }
 
     @media (max-width: 1610px) {
         .main-container {
             .form-container {
-                h4 {
-                    font-size: 3rem;
-                }
-
                 h3 {
                     font-size: 1rem;
                     letter-spacing: 1px;
-                }
-
-                .name,
-                .email,
-                .message {
-                    width: 30vw;
                 }
 
                 .form-control {
@@ -64,12 +35,8 @@ const Wrapper = styled.div`
             .form-container {
                 h4 {
                     font-size: 2.5rem;
-                    filter: drop-shadow(2px 2px var(--black));
+                    filter: drop-shadow(2px 2px var(--primary-500));
                 }
-            }
-
-            .contact-form {
-                width: 90%;
             }
         }
     }

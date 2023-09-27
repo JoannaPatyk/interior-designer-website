@@ -3,11 +3,11 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .services-container {
         width: 80%;
-        margin: 4rem auto;
+        margin: 5rem auto 8rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 70px;
+        gap: 120px;
     }
 
     .services-title {
@@ -20,17 +20,23 @@ const Wrapper = styled.div`
     .title {
         text-transform: uppercase;
         text-align: center;
-        margin: 2rem 0;
         font-weight: 900;
+        line-height: 1.5;
         filter: drop-shadow(2px 2px var(--primary-200));
     }
 
     .services-description {
         width: 75%;
         text-align: center;
-        font-weight: 300;
+        font-weight: 200;
+        font-size: 2rem;
         line-height: 2.2;
         margin-top: 2rem;
+
+        span {
+            font-weight: 900;
+            font-size: 2.5rem;
+        }
     }
 
     .service {
@@ -52,9 +58,9 @@ const Wrapper = styled.div`
     }
 
     .img-container {
-        height: 45vh;
-        width: 45vh;
-        border-radius: 50%;
+        margin: 0 auto;
+        width: 80%;
+        height: 30vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -80,7 +86,7 @@ const Wrapper = styled.div`
         right: -20%;
         width: 300px;
         height: 300px;
-        background: var(--primary-100);
+        background: var(--pink);
     }
 
     .circle-3 {
@@ -92,37 +98,42 @@ const Wrapper = styled.div`
     }
 
     .circle-4 {
-        bottom: -5%;
-        right: -10%;
+        bottom: 10%;
+        right: 0%;
         width: 180px;
         height: 180px;
-        background-color: var(--primary-100);
+        background-color: var(--green);
     }
 
     .circle-5 {
         bottom: 10%;
-        left: -5%;
+        left: 0%;
         width: 90px;
         height: 90px;
-        background-color: var(--orange);
+        background-color: var(--red);
     }
 
     .circle-6 {
         top: 10%;
-        right: -25%;
+        right: -10%;
         width: 190px;
         height: 190px;
         background-color: var(--primary-300);
     }
 
     .service-img {
-        width: 150%;
+        width: 300%;
     }
 
     .service-description {
         width: 90%;
         line-height: 2;
         text-align: justify;
+    }
+
+    .service-description p {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
     }
 
     .service-description h3 {
@@ -139,6 +150,10 @@ const Wrapper = styled.div`
         color: var(--orange);
     }
 
+    .btn {
+        width: 30vw;
+    }
+
     @media (max-width: 1400px) {
         .services-container {
             width: 90%;
@@ -149,8 +164,13 @@ const Wrapper = styled.div`
             gap: 20px;
         }
 
-        .service-description {
+        .services-description {
             width: 80%;
+            font-size: 1.8rem;
+
+            span {
+                font-size: 2.2rem;
+            }
         }
 
         .service-description h3 {
@@ -158,7 +178,7 @@ const Wrapper = styled.div`
         }
 
         .service-description p {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         .service-img {
@@ -171,6 +191,14 @@ const Wrapper = styled.div`
         .service {
             width: 90%;
         }
+
+        .services-description {
+            font-size: 1.6rem;
+
+            span {
+                font-size: 1.8rem;
+            }
+        }
     }
 
     @media (max-width: 1080px) {
@@ -181,7 +209,8 @@ const Wrapper = styled.div`
 
     @media (max-width: 945px) {
         .services-container {
-            gap: 40px;
+            margin: 5rem auto;
+            gap: 80px;
         }
 
         .service {
@@ -196,14 +225,7 @@ const Wrapper = styled.div`
 
     @media (max-width: 900px) {
         .img-container {
-            height: 30vh;
-            width: 30vh;
-        }
-    }
-
-    @media (max-width: 600px) {
-        .line {
-            display: none;
+            height: 28vh;
         }
     }
 
@@ -213,9 +235,45 @@ const Wrapper = styled.div`
         }
     }
 
+    @media (max-width: 600px) {
+        .line {
+            display: none;
+        }
+
+        .services-description {
+            font-size: 1.4rem;
+
+            span {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .line {
+            display: none;
+        }
+
+        .services-description {
+            font-size: 1.2rem;
+
+            span {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
     @media (max-width: 400px) {
         .title {
             font-size: 1.4rem;
+        }
+
+        .services-description {
+            font-size: 1rem;
+
+            span {
+                font-size: 1.2rem;
+            }
         }
     }
 `;

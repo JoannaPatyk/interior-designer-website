@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Wrapper from '../assets/wrappers/Services';
 import services from '../utils/services';
 
@@ -33,12 +34,16 @@ function Services() {
                 <h4 className="services-description">
                     Projekt wnętrza to proces, w którym Twój głos i <span>preferencje są kluczowe</span>. Moja wiedza w
                     połączeniu z Twoją wizją pozwolą stworzyć wnętrze, które będzie odzwierciedleniem Twojej osobowości
-                    i funkcjonalnych potrzeb. <br />
+                    i funkcjonalnych potrzeb.{' '}
                     <span>
                         Czekam na współpracę z Tobą i na stworzenie projektu wnętrza, który przewyższy Twoje
                         oczekiwania.
                     </span>
                 </h4>
+
+                <Link to="/projects" className="btn projects-btn">
+                    Sprawdź zrealizowane projekty
+                </Link>
             </div>
         </Wrapper>
     );

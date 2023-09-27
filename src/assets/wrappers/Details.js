@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .details-container {
-        min-height: 6vh;
+        min-height: 10vh;
         width: 100%;
         display: grid;
         gap: 5px;
         place-content: center;
-        grid-template-columns: 0.05fr 0.95fr;
+        grid-template-columns: 0.1fr 0.9fr;
         padding: 0 1.5rem;
         background-color: var(--primary-500);
         box-shadow: 2px 2px 10px 5px var(--black);
@@ -25,11 +25,6 @@ const Wrapper = styled.div`
         filter: drop-shadow(2px 2px var(--primary-500));
         margin: 0.5rem 0;
         cursor: pointer;
-
-        .icon {
-            color: var(--orange);
-            font-size: 2.2rem;
-        }
     }
 
     .detail-element {
@@ -37,12 +32,24 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: flex-end;
         gap: 10px;
+
+        .icon {
+            font-size: 2.5rem;
+        }
+
+        .phone-icon {
+            color: var(--red);
+        }
+
+        .email-icon {
+            color: var(--green);
+        }
     }
 
     .media-container {
         height: 100%;
         display: flex;
-        gap: 10px;
+        gap: 20px;
         align-items: center;
         justify-content: center;
 
@@ -55,14 +62,21 @@ const Wrapper = styled.div`
     }
 
     .media-icon {
-        font-size: 2.2rem;
-        color: var(--orange);
+        font-size: 2.5rem;
         transition: var(--transition);
         cursor: pointer;
     }
 
     .media-icon:hover {
         color: var(--white);
+    }
+
+    .facebook {
+        color: var(--blue);
+    }
+
+    .instagram {
+        color: var(--pink);
     }
 
     @media (max-width: 1250px) {

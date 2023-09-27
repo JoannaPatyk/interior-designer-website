@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .main-container {
+        margin: 5rem auto;
         position: relative;
-        box-shadow: 2px 2px 5px 5px var(--black);
+        box-shadow: 2px 2px 5px 8px var(--primary-500);
     }
 
     .title-container {
@@ -26,31 +27,29 @@ const Wrapper = styled.div`
     }
 
     .main-title {
-        width: 50%;
-        height: 70vh;
+        min-height: 70vh;
         position: absolute;
-        top: -2%;
+        top: 0%;
         left: 10%;
-        z-index: 10;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        filter: drop-shadow(3px 3px var(--black));
+        filter: drop-shadow(3px 3px var(--primary-500));
     }
 
     .title-container .title {
         padding: 0 0.5rem;
         font-weight: 900;
-        font-size: 2.8rem;
-        color: var(--black);
+        font-size: 3.8rem;
+        color: var(--primary-500);
         text-align: left;
         letter-spacing: var(--letterSpacing);
         font-family: var(--secondary-fontFamily);
-        background: var(--gradient);
+        background: var(--gradient-2);
     }
 
     .title-container h2 {
-        font-size: 2.2rem;
+        font-size: 3.5rem;
         font-weight: 800;
         line-height: 2;
         letter-spacing: 2px;
@@ -99,7 +98,7 @@ const Wrapper = styled.div`
             left: 50%;
             transform: translate(-50%, -50%);
             align-items: center;
-            filter: drop-shadow(2px 2px var(--black));
+            filter: drop-shadow(2px 2px var(--primary-500));
         }
 
         .title-container .title {

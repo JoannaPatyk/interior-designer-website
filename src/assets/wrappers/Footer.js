@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .footer-container {
         position: relative;
-        min-height: 40vh;
+        min-height: 30vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -13,11 +13,15 @@ const Wrapper = styled.div`
         box-shadow: 1px 1px 10px var(--primary-300);
     }
 
+    h2 {
+        padding: 1rem 0;
+    }
+
     p {
         margin: 0 auto;
         color: var(--white);
         font-size: 0.9rem;
-        padding-top: 1rem;
+        padding: 0.4rem 0;
     }
 
     small {
@@ -25,13 +29,12 @@ const Wrapper = styled.div`
         font-weight: 500;
     }
 
-    hr {
+    .footer-line {
         width: 40%;
         margin: 0 auto;
         height: 3px;
         border: 0;
-        border-top: 3px solid var(--orange);
-        filter: drop-shadow(4px 4px var(--white));
+        background: var(--gradient);
     }
 
     .footer-text {
@@ -40,7 +43,7 @@ const Wrapper = styled.div`
         gap: 40px;
         grid-template-columns: 0.5fr 0.5fr 0.5fr;
         margin: 0 auto;
-        padding: 4rem 0;
+        padding: 2rem 0;
 
         .footer-text-element {
             width: 100%;
@@ -83,16 +86,27 @@ const Wrapper = styled.div`
             .media-icon {
                 width: 100%;
                 font-size: 3rem;
-                color: var(--orange);
                 margin: 0.5rem 0;
                 transition: var(--transition);
                 cursor: pointer;
+            }
+
+            .facebook {
+                color: var(--blue);
+            }
+
+            .instagram {
+                color: var(--pink);
             }
 
             .media-icon:hover {
                 color: var(--white);
             }
         }
+    }
+
+    .copyright {
+        margin: 1rem 0;
     }
 
     @media (max-width: 1380px) {

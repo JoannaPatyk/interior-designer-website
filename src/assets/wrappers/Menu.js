@@ -4,7 +4,7 @@ const Wrapper = styled.div`
     .menu {
         padding: 2rem 0 3rem;
         display: flex;
-        gap: 30px;
+        gap: 40px;
         align-items: center;
         justify-content: center;
         text-decoration: none;
@@ -13,19 +13,21 @@ const Wrapper = styled.div`
     }
 
     .menu-element {
-        width: 10%;
-        padding: 0 1rem;
+        padding: 0.5rem 0;
+        width: 13%;
         font-weight: 900;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         font-family: var(--primary-fontFamily);
         letter-spacing: var(--letterSpacing);
+        color: var(--white);
         text-align: center;
+        filter: drop-shadow(2px 2px var(--white));
+        background-color: var(--primary-500);
         transition: var(--transition);
         cursor: pointer;
     }
 
     .menu-element:hover {
-        filter: drop-shadow(1.5px 1.5px var(--black));
         color: var(--orange);
         transform: scale(0.9);
     }
@@ -45,31 +47,29 @@ const Wrapper = styled.div`
     @media (max-width: 1180px) {
         .menu-element {
             width: 18%;
-            padding: 0 1.5rem;
         }
     }
 
     @media (max-width: 950px) {
         .menu {
-            gap: 10px;
+            gap: 30px;
         }
 
         .menu-element {
             width: 20%;
+            font-size: 1.2rem;
         }
     }
 
     @media (max-width: 800px) {
         .menu-element {
             width: 20%;
-            padding: 0;
         }
     }
 
     @media (max-width: 700px) {
         .menu-element {
             width: 25%;
-            padding: 0;
         }
     }
 

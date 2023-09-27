@@ -15,7 +15,6 @@ function About() {
                     <div className="img-container">
                         <img src={work1} className="work1-img" alt="Women" />
                     </div>
-
                     <div className="description">
                         {descriptions.map(({ id, element }) => {
                             if (id < 2) {

@@ -5,18 +5,18 @@ import { HiMenu, HiOutlineX } from 'react-icons/hi';
 import Wrapper from '../assets/wrappers/SmallMenu';
 
 function SmallMenu() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
     };
 
-    const toggleIcon = isOpen ? <HiMenu onClick={handleToggle} /> : <HiOutlineX onClick={handleToggle} />;
+    const toggleIcon = isOpen ? <HiOutlineX onClick={handleToggle} /> : <HiMenu onClick={handleToggle} />;
 
     return (
         <Wrapper>
             <div className="menu-icon">{toggleIcon}</div>
-            <div className={`${isOpen ? 'menu-box' : 'menu-box menu-open'}`}>
+            <div className={`${isOpen ? 'menu-box menu-open' : 'menu-box '}`}>
                 <nav className="menu">
                     <Link to="/" className="menu-element" role="button">
                         start

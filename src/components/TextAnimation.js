@@ -28,7 +28,7 @@ const TextAnimation = ({ text }) => {
     }, [currentIndex, text]);
 
     return (
-        <div>
+        <div className="container">
             <p>{animatedText}</p>
         </div>
     );

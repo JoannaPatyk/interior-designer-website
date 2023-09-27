@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .information-container {
         width: 90%;
-        margin: 10rem auto 6rem;
+        margin: 12rem auto 5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -29,8 +29,8 @@ const Wrapper = styled.div`
     .advantages-title h1 {
         text-align: center;
         text-transform: uppercase;
-        padding-top: 1rem;
         font-weight: 900;
+        line-height: 1.5;
         filter: drop-shadow(2px 2px var(--primary-200));
     }
 
@@ -39,7 +39,7 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         gap: 120px;
-        margin: 4rem 1rem;
+        margin: 5rem 1rem;
     }
 
     .advantage {
@@ -63,6 +63,7 @@ const Wrapper = styled.div`
         color: var(--white);
         background-color: var(--orange);
         border-radius: 50%;
+        filter: drop-shadow(2px 2px var(--primary-500));
     }
 
     .advantage h2 {
@@ -78,7 +79,7 @@ const Wrapper = styled.div`
     .advantage p {
         line-height: 2;
         text-align: justify;
-        letter-spacing: calc(var(--letterSpacing) / 1.5);
+        letter-spacing: 1px;
     }
 
     .projects-btn {

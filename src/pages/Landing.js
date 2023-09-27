@@ -3,7 +3,7 @@ import Logo from '../components/Logo';
 import Menu from '../components/Menu';
 import Photos from '../components/Photos';
 import Information from '../components/Information';
-import { HiArrowLongDown } from 'react-icons/hi2';
+import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
 import Services from '../components/Services';
 import Form from '../components/Form';
 import Banner from '../components/Banner';
@@ -41,11 +41,10 @@ function Landing() {
                 <Services />
                 {showButton && (
                     <button id="btn-up" onClick={handleButtonUp}>
-                        <HiArrowLongDown />
+                        <MdKeyboardDoubleArrowUp className="btn-up-icon" />
                     </button>
                 )}
                 <div className="form-container">
-                    <h4>Skontaktuj się ze mną, razem stworzymy Twój wymarzony dom</h4>
                     <Form />
                 </div>
             </div>
