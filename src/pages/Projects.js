@@ -45,8 +45,9 @@ function Projects() {
                                         itemTwo={<ReactCompareSliderImage alt={alt} src={img2} />}
                                         position={50}
                                         style={{
-                                            height: '100vh',
-                                            width: '100%',
+                                            height: '80vh',
+                                            width: '80%',
+                                            margin: '0 auto',
                                             objectFit: 'cover',
                                             opacity: '1'
                                         }}

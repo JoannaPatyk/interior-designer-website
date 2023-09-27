@@ -16,11 +16,11 @@ function Details() {
                 </div>
                 <div className="data-container">
                     <div className="detail-element">
-                        <PiPhone className="icon" />
+                        <PiPhone className="icon phone-icon" />
                         <p>(+48) 000 000 000</p>
                     </div>
                     <div className="detail-element">
-                        <PiChatCircle className="icon" />
+                        <PiChatCircle className="icon email-icon" />
                         <p>biuro@katarzynakowalska.pl</p>
                     </div>
                 </div>

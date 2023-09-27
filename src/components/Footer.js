@@ -9,10 +9,9 @@ function Footer() {
                 <div className="footer-text">
                     <div className="footer-text-element">
                         <h2>The Circle</h2>
-                        <h2>Katarzyna Kowalska</h2>
-                        <h3>architekt wnętrz</h3>
+                        <p>ul. Mickiewicza 13A/13</p>
+                        <p>00-000 Kraków</p>
                         <p>NIP: 0000000000</p>
-                        <p>REGON: 000000000</p>
                     </div>
                     <div className="footer-text-element">
                         <h2>Kontakt</h2>
@@ -32,8 +31,8 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <hr />
-                <p>Copyright © 2023 JP || All rights reserved</p>
+                <div className="footer-line" />
+                <p className="copyright">Copyright © 2023 JP || All rights reserved</p>
             </div>
         </Wrapper>
     );

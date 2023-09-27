@@ -4,7 +4,16 @@ const Wrapper = styled.div`
     .contact-container {
         position: relative;
         width: 100%;
-        background-image: url('https://github.com/JoannaPatyk/interior-designer-website/blob/main/src/assets/img/background.jpg?raw=true');
+        padding: 5rem auto;
+        margin-top: 6rem;
+        overflow: hidden;
+    }
+
+    .background-image {
+        position: absolute;
+        bottom: -5%;
+        left: -1%;
+        z-index: -10;
     }
 
     .logo-container {
@@ -12,51 +21,69 @@ const Wrapper = styled.div`
     }
 
     .contact-wrapper {
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     .contact-form {
-        width: 60%;
+        width: 50%;
         margin: 3rem 0;
         padding: 2rem 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-radius: 20px;
         background-color: var(--primary-100);
-        filter: drop-shadow(10px 10px var(--white));
+    }
+
+    h1,
+    h2,
+    h3 {
+        padding: 0.5rem;
+        font-weight: 900;
+        text-align: center;
+        line-height: 1.5;
+        letter-spacing: var(--letterSpacing);
+        filter: drop-shadow(2px 2px var(--white));
+    }
+
+    h1 {
+        width: 70%;
+        font-size: 2.5rem;
+        color: var(--blue);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        span {
+            color: var(--pink);
+        }
     }
 
     h2 {
-        margin: 0.5rem;
-        font-weight: 800;
-        text-align: center;
-        color: var(--orange);
-        filter: drop-shadow(2px 2px var(--black));
+        font-size: 2rem;
+        color: var(--green);
     }
 
     h3 {
-        width: 45vw;
-        font-weight: 500;
-        letter-spacing: 0.15rem;
-        padding: 0.75rem;
-        text-align: center;
+        font-size: 1.6rem;
     }
 
     span {
-        color: var(--orange);
+        color: var(--red);
         font-weight: 900;
-        filter: drop-shadow(2px 2px var(--black));
+        text-transform: uppercase;
     }
 
     input,
     textarea {
-        width: 28vw;
+        width: 35vw;
         margin: 0.85rem 0;
         padding: 1rem;
         font-family: var(--primary-fontFamily);
         border: none;
+        border-radius: 15px;
         transition: var(--transition);
     }
 
@@ -77,18 +104,24 @@ const Wrapper = styled.div`
 
     textarea {
         padding-top: 1rem;
-        height: 18vh;
+        height: 20vh;
         margin-bottom: 1rem;
     }
 
     .agreement {
         display: flex;
         margin: 0.5rem 0;
+
+        p {
+            line-height: 2;
+            font-size: 0.9rem;
+        }
     }
 
     form {
         display: grid;
         place-content: center;
+        margin: 1rem;
     }
 
     .form-control {
@@ -133,7 +166,25 @@ const Wrapper = styled.div`
         outline-offset: max(2px, 0.15em);
     }
 
-    @media (max-width: 1600px) {
+    .btn {
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 1700px) {
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width: 1610px) {
         .form-control,
         input,
         textarea {
@@ -141,7 +192,13 @@ const Wrapper = styled.div`
         }
 
         .contact-form {
-            width: 90%;
+            width: 60%;
+        }
+
+        .agreement {
+            p {
+                font-size: 0.8rem;
+            }
         }
     }
 
@@ -161,6 +218,33 @@ const Wrapper = styled.div`
         .btn {
             width: 40%;
         }
+
+        h1 {
+            width: 60%;
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 1280px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
     }
 
     @media (max-width: 1050px) {
@@ -168,18 +252,13 @@ const Wrapper = styled.div`
             width: 65%;
         }
 
-        .form-control,
         input,
         textarea {
             width: 50vw;
         }
 
-        h2 {
-            font-size: 1.3rem;
-        }
-
-        h3 {
-            font-size: 1rem;
+        h1 {
+            width: 70%;
         }
 
         .btn {
@@ -188,9 +267,32 @@ const Wrapper = styled.div`
         }
     }
 
+    @media (max-width: 850px) {
+        h1 {
+            width: 80%;
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+
     @media (max-width: 700px) {
         .contact-form {
-            width: 75%;
+            width: 80%;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        h3 {
+            font-size: 0.8rem;
         }
     }
 
@@ -203,6 +305,22 @@ const Wrapper = styled.div`
         input,
         textarea {
             width: 60vw;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 420px) {
+        h1 {
+            width: 90%;
+            padding: 0;
+            font-size: 1rem;
+        }
+
+        .form-control {
+            width: 65vw;
         }
     }
 `;

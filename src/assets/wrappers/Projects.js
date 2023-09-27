@@ -27,6 +27,8 @@ const Wrapper = styled.div`
     .project-title h1 {
         text-transform: uppercase;
         text-align: center;
+        line-height: 1.5;
+        filter: drop-shadow(2px 2px var(--primary-200));
     }
 
     .projects {
@@ -38,6 +40,7 @@ const Wrapper = styled.div`
     }
 
     .project {
+        width: 80%;
         display: flex;
         flex-direction: column;
         transition: var(--transition);

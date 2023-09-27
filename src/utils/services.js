@@ -5,6 +5,7 @@ import service4 from '../assets/img/windows.jpg';
 
 const services = [
     {
+        id: 0,
         img: service1,
         alt: 'Rozmowa',
         circle1: 'circle circle-1',
@@ -14,6 +15,7 @@ const services = [
             'Na tym etapie omawiamy Twoje oczekiwania, preferencje i wizję dotyczącą wnętrza, które chcesz stworzyć. Dokładnie dowiem się, jakie są Twoje potrzeby, styl życia oraz estetyczne preferencje. To pozwoli mi lepiej zrozumieć, jak mogę dostosować projekt do Ciebie.'
     },
     {
+        id: 1,
         img: service2,
         alt: 'Analiza',
         circle1: 'circle circle-3',
@@ -23,6 +25,7 @@ const services = [
             'Po zebraniu informacji z pierwszej rozmowy przystępuje do analizy przestrzeni, z którą będę pracować. Opracowuje dla Ciebie wstępną propozycję projektu uwzględniając wszelkie elementy. Na tym etapie przedstawiam wstępne pomysły, abyśmy mogli razem doprecyzować koncepcję i dostosować ją do Twoich oczekiwań.'
     },
     {
+        id: 2,
         img: service3,
         alt: 'Wycena',
         circle1: '',
@@ -32,6 +35,7 @@ const services = [
             'Po lepszym zrozumieniu Twoich preferencji, przystępuje do przygotowania wyceny projektu. Uwzględnia ona szacowane koszty oraz czas realizacji projektu. Przedstawiamy Ci również harmonogram prac, abyś wiedział, kiedy możesz oczekiwać poszczególnych etapów projektu.'
     },
     {
+        id: 3,
         img: service4,
         alt: 'Podpisanie umowy',
         circle1: 'circle circle-5',
