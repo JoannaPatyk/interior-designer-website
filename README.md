@@ -1,10 +1,8 @@
 # Interior Designer Portfolio 🪴
 
-This repository hosts the source code for a comprehensive portfolio exemplifying the work of an individual specializing in interior design. Through a collection of meticulously curated projects, this portfolio not only showcases an impressive array of skills but also provides a captivating insight into the creative journey within the realm of interior design.
+This repository hosts the source code for a comprehensive portfolio exemplifying the work of an individual specializing in interior design. Through a collection of meticulously curated projects, this portfolio not only showcases an impressive array of skills but also provides a captivating insight into the creative journey within the realm of interior design. From conceptualization to execution, each project narrates a unique story, reflecting the seamless amalgamation of aesthetics, functionality, and innovation.
 
-From conceptualization to execution, each project narrates a unique story, reflecting the seamless amalgamation of aesthetics, functionality, and innovation.
-
-The project is available at the email address: `https://interior-designer-website.onrender.com/`
+The project is available on link: https://interior-designer-website.onrender.com/
 
 ![Project Preview](src/assets/img/screen-1.png)
 ![Project Preview](src/assets/img/screen-3.png)
@@ -12,12 +10,10 @@ The project is available at the email address: `https://interior-designer-websit
 ## Features
 
 -   Presentation of interior design projects,
--   Information about me and skills,
--   Contact details,
--   Previous works.
+-   Information about and skills,
+-   Contact details.
 
 ![Project Preview](src/assets/img/screen-4.png)
-
 ![Project Preview](src/assets/img/screen-5.png)
 
 ## Installation and Local Setup
@@ -38,7 +34,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 -   React Router.
 
 ![Project Preview](src/assets/img/screen-6.png)
-
-## Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
