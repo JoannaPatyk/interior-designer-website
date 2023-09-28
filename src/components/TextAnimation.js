@@ -15,7 +15,7 @@ const TextAnimation = ({ text }) => {
                 setAnimatedText('');
                 setCurrentIndex(0);
             }
-        }, 180);
+        }, 200);
 
         const delayTimeout = setTimeout(() => {
             clearInterval(animationInterval);
@@ -35,7 +35,7 @@ const TextAnimation = ({ text }) => {
 };
 
 TextAnimation.propTypes = {
-    text: PropTypes.string
+    text: PropTypes.any
 };
 
 export default TextAnimation;

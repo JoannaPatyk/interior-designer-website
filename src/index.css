@@ -1,5 +1,5 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Oswald:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;700&family=Oswald:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -37,10 +37,8 @@ body {
     --primary-400: #353535;
     --primary-500: #020202;
 
-    /* --primary-500: #222222; */
     --white: #fefcfd;
 
-    --brown: #4e161b;
     --orange: #fe9a1f;
     --green: #20626a;
     --blue: #0e6aab;
@@ -49,19 +47,13 @@ body {
 
     /* FONT */
     --primary-fontFamily: 'Oswald', sans-serif;
-    --secondary-fontFamily: 'Playfair Display', sans-serif;
+    --secondary-fontFamily: 'Shantell Sans', sans-serif;
 
     /* REST vars */
-    --backgroundColor: var(--white);
     --borderRadius: 50px;
+    --circle: 50%;
     --letterSpacing: 1px;
     --transition: 0.5s;
-
-    /* BOX SHADOW */
-    --shadow-1: 1px 1px 10px var(--primary-500);
-    --shadow-2: inset 1em 1em var(--primary-500);
-    --shadow-3: 0 0 5px var(--primary-300);
-    --shadow-4: 1px 1px 10px var(--primary-300);
 
     --gradient: linear-gradient(to right, #f4bf5c, #20626a, #0e6aab, #c15db0, #e91246);
     --gradient-2: linear-gradient(to right, #ffffff, #7c7b7b);
@@ -106,14 +98,15 @@ body {
     top: 85%;
     right: 2%;
     z-index: 100;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     font-size: 3rem;
     border: none;
     border-radius: 50%;
     color: var(--primary-100);
     background-color: var(--pink);
     animation: btnUpMove 3s infinite;
+    filter: drop-shadow(3px 3px var(--primary-500));
     transition: var(--transition);
     cursor: pointer;
 }

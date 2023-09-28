@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .menu {
+        width: 100vw;
         padding: 2rem 0 3rem;
         display: flex;
         gap: 40px;
@@ -21,7 +22,7 @@ const Wrapper = styled.div`
         letter-spacing: var(--letterSpacing);
         color: var(--white);
         text-align: center;
-        filter: drop-shadow(2px 2px var(--white));
+        filter: drop-shadow(4px 4px var(--white));
         background-color: var(--primary-500);
         transition: var(--transition);
         cursor: pointer;
@@ -30,6 +31,7 @@ const Wrapper = styled.div`
     .menu-element:hover {
         color: var(--orange);
         transform: scale(0.9);
+        filter: drop-shadow(4px 4px var(--orange));
     }
 
     @media (max-width: 1480px) {
@@ -74,28 +76,15 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 600px) {
+        .menu {
+            padding-top: 0;
+            gap: 15px;
+            flex-direction: column;
+        }
+
         .menu-element {
+            width: 40%;
             font-size: 0.9rem;
-        }
-    }
-
-    @media (max-width: 450px) {
-        .menu {
-            gap: 5px;
-        }
-
-        .menu-element {
-            font-size: 0.75rem;
-        }
-    }
-
-    @media (max-width: 380px) {
-        .menu {
-            padding: 1.5rem 0;
-        }
-
-        .menu-element {
-            font-size: 0.6rem;
         }
     }
 `;
