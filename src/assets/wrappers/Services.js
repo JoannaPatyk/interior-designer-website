@@ -28,14 +28,14 @@ const Wrapper = styled.div`
     .services-description {
         width: 75%;
         text-align: center;
-        font-weight: 200;
-        font-size: 2rem;
+        font-weight: 400;
+        font-size: 1.8rem;
         line-height: 2.2;
         margin-top: 2rem;
 
         span {
             font-weight: 900;
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
     }
 
@@ -148,6 +148,8 @@ const Wrapper = styled.div`
     .services-description span {
         font-weight: 700;
         color: var(--orange);
+        font-family: var(--secondary-fontFamily);
+        filter: drop-shadow(2px 2px var(--primary-500));
     }
 
     .btn {
@@ -199,6 +201,10 @@ const Wrapper = styled.div`
                 font-size: 1.8rem;
             }
         }
+
+        .btn {
+            width: 35vw;
+        }
     }
 
     @media (max-width: 1080px) {
@@ -221,6 +227,14 @@ const Wrapper = styled.div`
             gap: 20px;
             margin: 1rem 0;
         }
+
+        .services-description span {
+            filter: drop-shadow(1px 1px var(--primary-500));
+        }
+
+        .btn {
+            width: 40vw;
+        }
     }
 
     @media (max-width: 900px) {
@@ -229,9 +243,19 @@ const Wrapper = styled.div`
         }
     }
 
+    @media (max-width: 820px) {
+        .btn {
+            width: 50vw;
+        }
+    }
+
     @media (max-width: 680px) {
         .title {
             font-size: 1.6rem;
+        }
+
+        .btn {
+            width: 60vw;
         }
     }
 
@@ -249,7 +273,7 @@ const Wrapper = styled.div`
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 520px) {
         .line {
             display: none;
         }
@@ -260,6 +284,21 @@ const Wrapper = styled.div`
             span {
                 font-size: 1.4rem;
             }
+        }
+
+        .btn {
+            width: 70vw;
+        }
+    }
+
+    @media (max-width: 520px) {
+        .services-description {
+            margin: 0;
+        }
+
+        .btn {
+            width: 80vw;
+            font-size: 0.9rem;
         }
     }
 
@@ -274,6 +313,10 @@ const Wrapper = styled.div`
             span {
                 font-size: 1.2rem;
             }
+        }
+
+        .btn {
+            font-size: 0.7rem;
         }
     }
 `;

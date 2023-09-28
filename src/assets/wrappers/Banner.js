@@ -4,24 +4,24 @@ const Wrapper = styled.div`
     .banner-container {
         margin: 0 10rem;
         display: grid;
-        grid-template-columns: 1fr 10fr;
+        grid-template-columns: 0.1fr 10.9fr;
         place-items: center;
     }
 
     .container {
         position: relative;
-        min-height: 13vh;
+        min-height: 15vh;
         padding: 2rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
 
         p {
-            color: var(--orange);
+            color: var(--pink);
             text-align: center;
             line-height: 1.8;
             font-weight: 900;
-            font-size: 1.8rem;
+            font-size: 2rem;
             filter: drop-shadow(2px 2px var(--primary-500));
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -35,11 +35,10 @@ const Wrapper = styled.div`
         justify-content: center;
         width: 60px;
         height: 60px;
-        color: var(--orange);
+        color: transparent;
         font-size: 2.5rem;
         border-radius: 50%;
         transition: var(--transition);
-        filter: drop-shadow(2px 2px var(--primary-500));
         cursor: pointer;
     }
 
