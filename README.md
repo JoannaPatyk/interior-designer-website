@@ -7,6 +7,7 @@ From conceptualization to execution, each project narrates a unique story, refle
 The project is available at the email address: `https://interior-designer-website.onrender.com/`
 
 ![Project Preview](src/assets/img/screen-1.png)
+![Project Preview](src/assets/img/screen-3.png)
 
 ## Features
 
@@ -15,7 +16,7 @@ The project is available at the email address: `https://interior-designer-websit
 -   Contact details,
 -   Previous works.
 
-![Project Preview](src/assets/img/screen-3.png)
+![Project Preview](src/assets/img/screen-4.png)
 
 ![Project Preview](src/assets/img/screen-5.png)
 
@@ -35,6 +36,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 -   JavaScript,
 -   React,
 -   React Router.
+
+![Project Preview](src/assets/img/screen-6.png)
 
 ## Getting Started with Create React App
 
