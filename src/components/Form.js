@@ -2,6 +2,18 @@ import React from 'react';
 import Wrapper from '../assets/wrappers/Contact';
 import background from '../assets/img/flowers.png';
 
+let sectionStyle = {
+    position: 'absolute',
+    height: '100vh',
+    width: '100%',
+    top: '0%',
+    left: '0',
+    zIndex: '-10',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundImage: `url(${background})`
+};
+
 function Form() {
     return (
         <Wrapper>
@@ -30,7 +42,8 @@ function Form() {
                         wyślij
                     </button>
                 </form>
-                <img src={background} className="background-image" alt="Tło" />
+
+                <div style={sectionStyle}></div>
             </div>
         </Wrapper>
     );

@@ -8,6 +8,7 @@ const Wrapper = styled.div`
         flex-direction: column;
         align-items: center;
         gap: 120px;
+        overflow: hidden;
     }
 
     .services-title {
@@ -154,6 +155,7 @@ const Wrapper = styled.div`
 
     .btn {
         width: 30vw;
+        margin: 1rem;
     }
 
     @media (max-width: 1400px) {

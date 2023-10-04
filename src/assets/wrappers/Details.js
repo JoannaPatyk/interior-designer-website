@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .details-container {
-        min-height: 10vh;
+        min-height: 6vh;
         width: 100%;
         display: grid;
         gap: 5px;
@@ -10,7 +10,8 @@ const Wrapper = styled.div`
         grid-template-columns: 0.1fr 0.9fr;
         padding: 0 1.5rem;
         background-color: var(--primary-500);
-        box-shadow: 2px 2px 10px 5px var(--black);
+        box-shadow: 2px 2px 10px 5px var(--primary-500);
+        overflow: hidden;
     }
 
     .details-container p {

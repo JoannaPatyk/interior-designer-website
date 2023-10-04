@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .information-container {
+        position: relative;
         width: 90%;
         margin: 12rem auto 5rem;
         display: flex;
@@ -28,10 +29,10 @@ const Wrapper = styled.div`
 
     .advantages-title h1 {
         text-align: center;
-        text-transform: uppercase;
-        font-weight: 900;
+        font-weight: 600;
         line-height: 1.5;
         filter: drop-shadow(2px 2px var(--primary-200));
+        text-transform: uppercase;
     }
 
     .advantages-elements {
@@ -67,13 +68,13 @@ const Wrapper = styled.div`
     }
 
     .advantage h2 {
-        padding: 0.5rem;
-        margin: 1rem;
         text-align: center;
-        font-weight: 900;
+        font-weight: 600;
+        font-size: 2.2rem;
+        color: var(--pink);
         letter-spacing: var(--letterSpacing);
         font-family: var(--secondary-fontFamily);
-        text-transform: uppercase;
+        filter: drop-shadow(2px 2px var(--primary-500));
     }
 
     .advantage p {
@@ -127,7 +128,7 @@ const Wrapper = styled.div`
 
         .advantage h2 {
             margin: 0.8rem;
-            font-size: 1.4rem;
+            font-size: 2rem;
         }
 
         .advantage p {
@@ -203,7 +204,7 @@ const Wrapper = styled.div`
         }
 
         .advantage h2 {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
         }
 
         .advantage p {
@@ -223,16 +224,8 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 480px) {
-        .information-container {
-            margin: 4rem auto;
-        }
-
         .advantage {
             width: 95%;
-        }
-
-        .advantage h2 {
-            font-size: 1.1rem;
         }
 
         .advantage p {

@@ -14,16 +14,17 @@ const Wrapper = styled.div`
     }
 
     .menu-element {
-        padding: 0.5rem 0;
-        width: 13%;
+        padding: 0.85rem 0;
+        width: 20%;
         font-weight: 900;
         font-size: 1.8rem;
         font-family: var(--primary-fontFamily);
-        letter-spacing: var(--letterSpacing);
+        letter-spacing: calc(var(--letterSpacing) * 2);
         color: var(--white);
         text-align: center;
-        filter: drop-shadow(4px 4px var(--white));
+        border-radius: 25px;
         background-color: var(--primary-500);
+        box-shadow: 2px 2px 10px 5px var(--primary-500);
         transition: var(--transition);
         cursor: pointer;
     }
@@ -31,22 +32,9 @@ const Wrapper = styled.div`
     .menu-element:hover {
         color: var(--orange);
         transform: scale(0.9);
-        filter: drop-shadow(4px 4px var(--orange));
     }
 
     @media (max-width: 1480px) {
-        .menu-element {
-            width: 12%;
-        }
-    }
-
-    @media (max-width: 1280px) {
-        .menu-element {
-            width: 15%;
-        }
-    }
-
-    @media (max-width: 1180px) {
         .menu-element {
             width: 18%;
         }
@@ -58,7 +46,6 @@ const Wrapper = styled.div`
         }
 
         .menu-element {
-            width: 20%;
             font-size: 1.2rem;
         }
     }
@@ -83,8 +70,7 @@ const Wrapper = styled.div`
         }
 
         .menu-element {
-            width: 40%;
-            font-size: 0.9rem;
+            width: 50%;
         }
     }
 `;
