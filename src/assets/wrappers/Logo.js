@@ -5,18 +5,17 @@ const Wrapper = styled.div`
         position: relative;
         width: 100%;
         margin: 4rem 0;
-        overflow: hidden;
     }
 
     .logo {
         height: 45vh;
         margin: 2rem 0 1rem;
         border-radius: 50%;
-        box-shadow: 2px 2px 10px 5px var(--primary-500);
+        box-shadow: 2px 2px 10px 10px var(--primary-500);
         z-index: -1;
     }
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1200px) {
         .logo {
             height: 40vh;
         }

@@ -5,7 +5,7 @@ const Wrapper = styled.div`
         position: relative;
         width: 100%;
         padding: 5rem auto;
-        margin-top: 6rem;
+        margin-top: 10rem;
         overflow: hidden;
     }
 
@@ -247,6 +247,12 @@ const Wrapper = styled.div`
         }
     }
 
+    @media (max-width: 1195px) {
+        .contact-container {
+            margin-top: 5rem;
+        }
+    }
+
     @media (max-width: 1050px) {
         .contact-form {
             width: 65%;
@@ -296,6 +302,12 @@ const Wrapper = styled.div`
         }
     }
 
+    @media (max-width: 680px) {
+        .contact-container {
+            margin-top: 10rem;
+        }
+    }
+
     @media (max-width: 500px) {
         .contact-form {
             width: 85%;
@@ -313,6 +325,9 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 420px) {
+        .contact-container {
+            margin-top: 7rem;
+        }
         h1 {
             width: 90%;
             padding: 0;

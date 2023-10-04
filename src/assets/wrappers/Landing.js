@@ -3,21 +3,14 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .main-container {
         .landing-container {
-            position: relative;
             width: 100%;
+            /* min-height: 95vh; */
             margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             overflow: hidden;
-        }
-
-        .landing-background-image {
-            position: absolute;
-            top: -1%;
-            left: -1%;
-            z-index: -10;
         }
 
         .form-container {

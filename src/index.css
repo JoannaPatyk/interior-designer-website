@@ -1,5 +1,5 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;700&family=Oswald:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster:wght@300;400;500;600;700&family=Oswald:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -47,7 +47,7 @@ body {
 
     /* FONT */
     --primary-fontFamily: 'Oswald', sans-serif;
-    --secondary-fontFamily: 'Shantell Sans', sans-serif;
+    --secondary-fontFamily: 'Lobster', sans-serif;
 
     /* REST vars */
     --borderRadius: 50px;

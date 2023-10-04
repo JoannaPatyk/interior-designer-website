@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .slider-container {
         position: relative;
+        margin-bottom: 12rem;
         width: 100%;
         height: 70vh;
         box-shadow: 2px 2px 10px 10px var(--primary-500);
